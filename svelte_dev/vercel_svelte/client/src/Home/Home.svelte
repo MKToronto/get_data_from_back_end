@@ -64,7 +64,7 @@
   $: slider_value_front_end = 100;
 
   let slider_choice;
-  $: slider_choice = "Digits";
+  $: slider_choice = "";
   // let value2 = 0;
   let disabled = false;
 </script>
