@@ -6898,8 +6898,8 @@ var app = (function () {
     const file$1 = "src/Home/Home.svelte";
 
     function create_fragment$1(ctx) {
+    	let div10;
     	let div9;
-    	let div8;
     	let div0;
     	let p0;
     	let t1;
@@ -6910,6 +6910,7 @@ var app = (function () {
     	let p2;
     	let t4;
     	let t5;
+    	let div7;
     	let div3;
     	let h60;
     	let t7;
@@ -6931,7 +6932,7 @@ var app = (function () {
     	let t14;
     	let h63;
     	let t16;
-    	let div7;
+    	let div8;
     	let h64;
     	let t17;
     	let u;
@@ -6967,8 +6968,8 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
+    			div10 = element("div");
     			div9 = element("div");
-    			div8 = element("div");
     			div0 = element("div");
     			p0 = element("p");
     			p0.textContent = "Welcome to a really great FastAPI and Svelte demo!";
@@ -6981,6 +6982,7 @@ var app = (function () {
     			p2 = element("p");
     			t4 = text(/*$value_to_send*/ ctx[2]);
     			t5 = space();
+    			div7 = element("div");
     			div3 = element("div");
     			h60 = element("h6");
     			h60.textContent = "Choose a character type:";
@@ -7006,7 +7008,7 @@ var app = (function () {
     			h63 = element("h6");
     			h63.textContent = "Punctuation";
     			t16 = space();
-    			div7 = element("div");
+    			div8 = element("div");
     			h64 = element("h6");
     			t17 = text("Number of Milliseconds Between Updates From ");
     			u = element("u");
@@ -7029,96 +7031,99 @@ var app = (function () {
     			add_location(p2, file$1, 72, 6, 2291);
     			attr_dev(div2, "class", "col-start-8 col-end-9 ");
     			add_location(div2, file$1, 71, 6, 2248);
-    			add_location(h60, file$1, 76, 0, 2400);
-    			attr_dev(div3, "class", "col-start-4 col-end-10 ");
-    			add_location(div3, file$1, 74, 4, 2361);
+    			add_location(h60, file$1, 76, 0, 2445);
+    			attr_dev(div3, "class", "grid grid-cols-12 gap-y-4");
+    			add_location(div3, file$1, 75, 6, 2405);
     			attr_dev(input0, "type", "radio");
     			input0.__value = "Digits";
     			input0.value = input0.__value;
     			/*$$binding_groups*/ ctx[7][0].push(input0);
-    			add_location(input0, file$1, 81, 10, 2514);
-    			add_location(h61, file$1, 88, 10, 2728);
-    			add_location(label0, file$1, 80, 6, 2496);
+    			add_location(input0, file$1, 81, 10, 2559);
+    			add_location(h61, file$1, 88, 10, 2773);
+    			add_location(label0, file$1, 80, 6, 2541);
     			attr_dev(div4, "class", "col-start-4 col-end-5 text-center");
-    			add_location(div4, file$1, 79, 0, 2442);
+    			add_location(div4, file$1, 79, 0, 2487);
     			attr_dev(input1, "type", "radio");
     			input1.__value = "Letters";
     			input1.value = input1.__value;
     			/*$$binding_groups*/ ctx[7][0].push(input1);
-    			add_location(input1, file$1, 93, 10, 2849);
-    			add_location(h62, file$1, 99, 10, 3041);
-    			add_location(label1, file$1, 92, 6, 2831);
+    			add_location(input1, file$1, 93, 10, 2894);
+    			add_location(h62, file$1, 99, 10, 3086);
+    			add_location(label1, file$1, 92, 6, 2876);
     			attr_dev(div5, "class", "col-start-5 col-end-6 text-center ");
-    			add_location(div5, file$1, 91, 6, 2776);
+    			add_location(div5, file$1, 91, 6, 2821);
     			attr_dev(input2, "type", "radio");
     			input2.__value = "Punctuation";
     			input2.value = input2.__value;
     			/*$$binding_groups*/ ctx[7][0].push(input2);
-    			add_location(input2, file$1, 104, 6, 3156);
-    			add_location(h63, file$1, 110, 6, 3328);
-    			add_location(label2, file$1, 103, 6, 3142);
+    			add_location(input2, file$1, 104, 6, 3201);
+    			add_location(h63, file$1, 110, 6, 3373);
+    			add_location(label2, file$1, 103, 6, 3187);
     			attr_dev(div6, "class", "col-start-6 col-end-7 text-center");
-    			add_location(div6, file$1, 102, 4, 3088);
-    			add_location(u, file$1, 116, 54, 3467);
-    			add_location(h64, file$1, 116, 6, 3419);
-    			add_location(small, file$1, 118, 6, 3510);
+    			add_location(div6, file$1, 102, 4, 3133);
     			attr_dev(div7, "class", "col-start-4 col-end-10 ");
-    			add_location(div7, file$1, 114, 4, 3374);
-    			attr_dev(div8, "class", "grid grid-cols-12 gap-y-20");
-    			add_location(div8, file$1, 63, 2, 1948);
-    			attr_dev(div9, "class", "mt-20");
-    			add_location(div9, file$1, 62, 0, 1926);
+    			add_location(div7, file$1, 74, 4, 2361);
+    			add_location(u, file$1, 116, 54, 3518);
+    			add_location(h64, file$1, 116, 6, 3470);
+    			add_location(small, file$1, 118, 6, 3561);
+    			attr_dev(div8, "class", "col-start-4 col-end-10 ");
+    			add_location(div8, file$1, 114, 4, 3425);
+    			attr_dev(div9, "class", "grid grid-cols-12 gap-y-20");
+    			add_location(div9, file$1, 63, 2, 1948);
+    			attr_dev(div10, "class", "mt-20");
+    			add_location(div10, file$1, 62, 0, 1926);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div9, anchor);
-    			append_dev(div9, div8);
-    			append_dev(div8, div0);
+    			insert_dev(target, div10, anchor);
+    			append_dev(div10, div9);
+    			append_dev(div9, div0);
     			append_dev(div0, p0);
-    			append_dev(div8, t1);
-    			append_dev(div8, div1);
+    			append_dev(div9, t1);
+    			append_dev(div9, div1);
     			append_dev(div1, p1);
-    			append_dev(div8, t3);
-    			append_dev(div8, div2);
+    			append_dev(div9, t3);
+    			append_dev(div9, div2);
     			append_dev(div2, p2);
     			append_dev(p2, t4);
-    			append_dev(div8, t5);
-    			append_dev(div8, div3);
+    			append_dev(div9, t5);
+    			append_dev(div9, div7);
+    			append_dev(div7, div3);
     			append_dev(div3, h60);
-    			append_dev(div8, t7);
-    			append_dev(div8, div4);
+    			append_dev(div7, t7);
+    			append_dev(div7, div4);
     			append_dev(div4, label0);
     			append_dev(label0, input0);
     			input0.checked = input0.__value === /*slider_choice*/ ctx[1];
     			append_dev(label0, t8);
     			append_dev(label0, h61);
-    			append_dev(div8, t10);
-    			append_dev(div8, div5);
+    			append_dev(div7, t10);
+    			append_dev(div7, div5);
     			append_dev(div5, label1);
     			append_dev(label1, input1);
     			input1.checked = input1.__value === /*slider_choice*/ ctx[1];
     			append_dev(label1, t11);
     			append_dev(label1, h62);
-    			append_dev(div8, t13);
-    			append_dev(div8, div6);
+    			append_dev(div7, t13);
+    			append_dev(div7, div6);
     			append_dev(div6, label2);
     			append_dev(label2, input2);
     			input2.checked = input2.__value === /*slider_choice*/ ctx[1];
     			append_dev(label2, t14);
     			append_dev(label2, h63);
-    			append_dev(div8, t16);
-    			append_dev(div8, div7);
-    			append_dev(div7, h64);
+    			append_dev(div9, t16);
+    			append_dev(div9, div8);
+    			append_dev(div8, h64);
     			append_dev(h64, t17);
     			append_dev(h64, u);
-    			append_dev(div7, t19);
-    			append_dev(div7, small);
+    			append_dev(div8, t19);
+    			append_dev(div8, small);
     			append_dev(small, t20);
     			append_dev(small, t21);
-    			append_dev(div7, t22);
-    			mount_component(slider, div7, null);
+    			append_dev(div8, t22);
+    			mount_component(slider, div8, null);
     			current = true;
 
     			if (!mounted) {
@@ -7198,7 +7203,7 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div9);
+    			if (detaching) detach_dev(div10);
     			/*$$binding_groups*/ ctx[7][0].splice(/*$$binding_groups*/ ctx[7][0].indexOf(input0), 1);
     			/*$$binding_groups*/ ctx[7][0].splice(/*$$binding_groups*/ ctx[7][0].indexOf(input1), 1);
     			/*$$binding_groups*/ ctx[7][0].splice(/*$$binding_groups*/ ctx[7][0].indexOf(input2), 1);

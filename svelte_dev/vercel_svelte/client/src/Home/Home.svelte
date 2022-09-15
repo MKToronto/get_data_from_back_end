@@ -73,7 +73,7 @@
       <p class="text-blue-400 text-2xl">{$value_to_send}</p>
     </div>
     <div class="col-start-4 col-end-10 ">
-
+      <div class="grid grid-cols-12 gap-y-4">
 <h6>Choose a character type:</h6>
 </div>
 
@@ -111,7 +111,7 @@
       <h6>Punctuation</h6>
   </label>
   </div>
-
+</div>
     <div class="col-start-4 col-end-10 ">
 
       <h6>Number of Milliseconds Between Updates From <u>Svelte Front End</u> </h6>
