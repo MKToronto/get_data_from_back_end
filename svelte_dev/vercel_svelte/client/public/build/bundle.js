@@ -6934,13 +6934,11 @@ var app = (function () {
     	let t16;
     	let div8;
     	let h64;
-    	let t17;
-    	let u;
-    	let t19;
+    	let t18;
     	let small;
+    	let t19;
     	let t20;
     	let t21;
-    	let t22;
     	let slider;
     	let updating_value;
     	let current;
@@ -7010,14 +7008,12 @@ var app = (function () {
     			t16 = space();
     			div8 = element("div");
     			h64 = element("h6");
-    			t17 = text("Number of Milliseconds Between Updates From ");
-    			u = element("u");
-    			u.textContent = "Svelte Front End";
-    			t19 = space();
+    			h64.textContent = "Number of Milliseconds Between Updates:";
+    			t18 = space();
     			small = element("small");
-    			t20 = text("Value: ");
-    			t21 = text(/*slider_value_front_end*/ ctx[0]);
-    			t22 = space();
+    			t19 = text("Value: ");
+    			t20 = text(/*slider_value_front_end*/ ctx[0]);
+    			t21 = space();
     			create_component(slider.$$.fragment);
     			attr_dev(p0, "class", "text-2xl");
     			add_location(p0, file$1, 65, 6, 2038);
@@ -7063,9 +7059,8 @@ var app = (function () {
     			add_location(div6, file$1, 102, 4, 3133);
     			attr_dev(div7, "class", "col-start-4 col-end-10 ");
     			add_location(div7, file$1, 74, 4, 2361);
-    			add_location(u, file$1, 116, 54, 3518);
     			add_location(h64, file$1, 116, 6, 3470);
-    			add_location(small, file$1, 118, 6, 3561);
+    			add_location(small, file$1, 118, 6, 3532);
     			attr_dev(div8, "class", "col-start-4 col-end-10 ");
     			add_location(div8, file$1, 114, 4, 3425);
     			attr_dev(div9, "class", "grid grid-cols-12 gap-y-20");
@@ -7116,13 +7111,11 @@ var app = (function () {
     			append_dev(div9, t16);
     			append_dev(div9, div8);
     			append_dev(div8, h64);
-    			append_dev(h64, t17);
-    			append_dev(h64, u);
-    			append_dev(div8, t19);
+    			append_dev(div8, t18);
     			append_dev(div8, small);
+    			append_dev(small, t19);
     			append_dev(small, t20);
-    			append_dev(small, t21);
-    			append_dev(div8, t22);
+    			append_dev(div8, t21);
     			mount_component(slider, div8, null);
     			current = true;
 
@@ -7182,7 +7175,7 @@ var app = (function () {
     				input2.checked = input2.__value === /*slider_choice*/ ctx[1];
     			}
 
-    			if (!current || dirty & /*slider_value_front_end*/ 1) set_data_dev(t21, /*slider_value_front_end*/ ctx[0]);
+    			if (!current || dirty & /*slider_value_front_end*/ 1) set_data_dev(t20, /*slider_value_front_end*/ ctx[0]);
     			const slider_changes = {};
 
     			if (!updating_value && dirty & /*slider_value_front_end*/ 1) {

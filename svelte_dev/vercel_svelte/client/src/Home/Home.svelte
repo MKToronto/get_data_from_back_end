@@ -114,7 +114,7 @@
 </div>
     <div class="col-start-4 col-end-10 ">
 
-      <h6>Number of Milliseconds Between Updates From <u>Svelte Front End</u> </h6>
+      <h6>Number of Milliseconds Between Updates:</h6>
       
       <small>Value: {slider_value_front_end}</small>
       
