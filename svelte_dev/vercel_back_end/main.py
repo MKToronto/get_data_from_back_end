@@ -13,7 +13,7 @@ sys.path.insert(0, str(here.parents[1].absolute()))
 sys.path.insert(0, str(here.parents[0].absolute()))
 # subprocess.run("npm start", shell=True, cwd=str(here.parents[0].absolute())+"/client")
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.concurrency import run_in_threadpool
+# from fastapi.concurrency import run_in_threadpool
 
 app = FastAPI()
 print("str(here.parents[0].absolute())", str(here.parents[0].absolute()))
@@ -174,12 +174,15 @@ def run_main():
         # value = "9"
         print("new_value", session['value_to_send'])
         end = time.time()
+        session['started'] = True
 
-@app.on_event('startup')
-async def app_startup():
-    await run_in_threadpool(lambda: run_main())
-    session['started'] = True
-    # asyncio.create_task(runner.run_main())
+# @app.on_event('startup')
+# async def app_startup():
+#     await run_in_threadpool(lambda: run_main())
+#     session['started'] = True
+#     # asyncio.create_task(runner.run_main())
+
+run_main()
 
 @app.get("/get_value_to_send")
 async def get_value_to_send():
