@@ -17,18 +17,18 @@ app = FastAPI()
 print("str(here.parents[0].absolute())", str(here.parents[0].absolute()))
 # client_address = str(here.parents[0].absolute()) + "/client/public/"
 # client_address = "./svelte_dev/client/public/" 
-origins = [
-    "https://ptc1ap.deta.dev/",
-    "http://ptc1ap.deta.dev/",
-    "http://localhost",
-    "http://localhost:8080",
-    "https://get-data-from-back-end.vercel.app/"
-    "http://get-data-from-back-end.vercel.app/"
-]
+# origins = [
+#     "https://ptc1ap.deta.dev/",
+#     "http://ptc1ap.deta.dev/",
+#     "http://localhost",
+#     "http://localhost:8080",
+#     "https://get-data-from-back-end.vercel.app/"
+#     "http://get-data-from-back-end.vercel.app/"
+# ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

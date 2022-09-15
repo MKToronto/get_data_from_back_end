@@ -5366,8 +5366,8 @@ var app = (function () {
     	}
 
     	let slider0_props = {
-    		min: "1",
-    		max: "2000",
+    		min: "500",
+    		max: "3000",
     		color: "blue",
     		disabled: /*disabled*/ ctx[5]
     	};
@@ -5385,8 +5385,8 @@ var app = (function () {
     	}
 
     	let slider1_props = {
-    		min: "1",
-    		max: "2000",
+    		min: "500",
+    		max: "3000",
     		color: "blue",
     		disabled: /*disabled*/ ctx[5]
     	};
@@ -5455,11 +5455,11 @@ var app = (function () {
     			add_location(small0, file$1, 67, 0, 2038);
     			attr_dev(div3, "class", "col-start-4 col-end-10 ");
     			add_location(div3, file$1, 63, 4, 1922);
-    			add_location(u1, file$1, 76, 54, 2354);
-    			add_location(h61, file$1, 76, 6, 2306);
-    			add_location(small1, file$1, 78, 6, 2397);
+    			add_location(u1, file$1, 76, 54, 2356);
+    			add_location(h61, file$1, 76, 6, 2308);
+    			add_location(small1, file$1, 78, 6, 2399);
     			attr_dev(div4, "class", "col-start-4 col-end-10 ");
-    			add_location(div4, file$1, 74, 4, 2261);
+    			add_location(div4, file$1, 74, 4, 2263);
     			attr_dev(div5, "class", "grid grid-cols-12 gap-y-20");
     			add_location(div5, file$1, 52, 2, 1509);
     			attr_dev(div6, "class", "mt-20");
