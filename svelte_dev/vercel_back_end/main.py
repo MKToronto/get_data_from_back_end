@@ -131,7 +131,7 @@ def back_end_data_process_init():
 
 def back_end_data_process():
     while True:
-        session['started'] = True
+        # session['started'] = True
         # print("starting")
         global start
         global end
