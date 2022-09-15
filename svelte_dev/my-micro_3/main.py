@@ -53,36 +53,37 @@ class BackgroundRunner:
             global start
             global end
             start = time.time()
-            # print("starting1")
-            time.sleep(session['slider_value'])
+            print("starting1")
+            await asyncio.sleep(session['slider_value'])
             session['value_to_send'] = "1"
             self.value = "1"
-            # print("starting 2")
-            time.sleep(session['slider_value'])
+            print("starting 2")
+            await asyncio.sleep(session['slider_value'])
             session['value_to_send'] = "2"
             self.value = "2"
-            time.sleep(session['slider_value'])
+            await asyncio.sleep(session['slider_value'])
             session['value_to_send'] = "3"
             self.value = "3"
-            time.sleep(session['slider_value'])
+            await asyncio.sleep(session['slider_value'])
             session['value_to_send'] = "4"
             self.value = "4"
-            time.sleep(session['slider_value'])
+            await asyncio.sleep(session['slider_value'])
             session['value_to_send'] = "5"
             self.value = "5"
-            time.sleep(session['slider_value'])
+            await asyncio.sleep(session['slider_value'])
             session['value_to_send'] = "6"
             self.value = "6"
-            time.sleep(session['slider_value'])
+            await asyncio.sleep(session['slider_value'])
             session['value_to_send'] = "7"
             self.value = "7"
-            time.sleep(session['slider_value'])
+            await asyncio.sleep(session['slider_value'])
             session['value_to_send'] = "8"
             self.value = "8"
-            time.sleep(session['slider_value'])
+            await asyncio.sleep(session['slider_value'])
             session['value_to_send'] = "9"
             self.value = "9"
             end = time.time()
+            await asyncio.sleep(1)
 
 runner = BackgroundRunner()
 # def back_end_data_process():
@@ -114,7 +115,9 @@ runner = BackgroundRunner()
 
 
 # back_end_data_process_init()
-
+@app.on_event('startup')
+async def app_startup():
+    asyncio.create_task(runner.run_main())
 
 @app.get("/get_value_to_send")
 async def get_value_to_send():
@@ -129,7 +132,6 @@ async def send_time_sleep_to_back_end(slider_value):
 
 @app.get("/")
 async def read_root():
-    asyncio.create_task(runner.run_main())
     total = end - start
     return {"Hello": "World1234",
     "end-start": total,
