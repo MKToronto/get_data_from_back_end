@@ -37,41 +37,80 @@ session = {'value_to_send': '0', 'slider_value': 0}
 start = 0.0
 end =0.0
 
-def back_end_data_process_init():
-    """ This initialises connection_check_loop as a background thread"""
-    x_back_end_data_process = threading.Thread(target=back_end_data_process)
-    x_back_end_data_process.start()
+# def back_end_data_process_init():
+#     """ This initialises connection_check_loop as a background thread"""
+#     x_back_end_data_process = threading.Thread(target=back_end_data_process)
+#     x_back_end_data_process.start()
+
+class BackgroundRunner:
+    def __init__(self):
+        self.value = 0
+
+    async def run_main(self):
+        while True:
+            global start
+            global end
+            start = time.time()
+            time.sleep(session['slider_value'])
+            session['value_to_send'] = "1"
+            self.value = "1"
+            time.sleep(session['slider_value'])
+            session['value_to_send'] = "2"
+            self.value = "2"
+            time.sleep(session['slider_value'])
+            session['value_to_send'] = "3"
+            self.value = "3"
+            time.sleep(session['slider_value'])
+            session['value_to_send'] = "4"
+            self.value = "4"
+            time.sleep(session['slider_value'])
+            session['value_to_send'] = "5"
+            self.value = "5"
+            time.sleep(session['slider_value'])
+            session['value_to_send'] = "6"
+            self.value = "6"
+            time.sleep(session['slider_value'])
+            session['value_to_send'] = "7"
+            self.value = "7"
+            time.sleep(session['slider_value'])
+            session['value_to_send'] = "8"
+            self.value = "8"
+            time.sleep(session['slider_value'])
+            session['value_to_send'] = "9"
+            self.value = "9"
+            end = time.time()
+
+runner = BackgroundRunner()
+
+# def back_end_data_process():
+
+#     while True:
+#         global start
+#         global end
+#         start = time.time()
+#         time.sleep(session['slider_value'])
+#         session['value_to_send'] = "1"
+#         time.sleep(session['slider_value'])
+#         session['value_to_send'] = "2"
+#         time.sleep(session['slider_value'])
+#         session['value_to_send'] = "3"
+#         time.sleep(session['slider_value'])
+#         session['value_to_send'] = "4"
+#         time.sleep(session['slider_value'])
+#         session['value_to_send'] = "5"
+#         time.sleep(session['slider_value'])
+#         session['value_to_send'] = "6"
+#         time.sleep(session['slider_value'])
+#         session['value_to_send'] = "7"
+#         time.sleep(session['slider_value'])
+#         session['value_to_send'] = "8"
+#         time.sleep(session['slider_value'])
+#         session['value_to_send'] = "9"
+#         end = time.time()
+#         # time.sleep(1)
 
 
-def back_end_data_process():
-
-    while True:
-        global start
-        global end
-        start = time.time()
-        # time.sleep(session['slider_value'])
-        session['value_to_send'] = "1"
-        # time.sleep(session['slider_value'])
-        session['value_to_send'] = "2"
-        # time.sleep(session['slider_value'])
-        session['value_to_send'] = "3"
-        # time.sleep(session['slider_value'])
-        session['value_to_send'] = "4"
-        # time.sleep(session['slider_value'])
-        session['value_to_send'] = "5"
-        # time.sleep(session['slider_value'])
-        session['value_to_send'] = "6"
-        # time.sleep(session['slider_value'])
-        session['value_to_send'] = "7"
-        # time.sleep(session['slider_value'])
-        session['value_to_send'] = "8"
-        # time.sleep(session['slider_value'])
-        session['value_to_send'] = "9"
-        end = time.time()
-        # time.sleep(1)
-
-
-back_end_data_process_init()
+# back_end_data_process_init()
 
 
 @app.get("/get_value_to_send")
@@ -91,6 +130,7 @@ async def read_root():
     return {"Hello": "World1234",
     "end-start": total,
     "session['slider_value']":session['slider_value'],
+    "runner.value":runner.value,
     "session['value_to_send']":session['value_to_send']
     }
 
