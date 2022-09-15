@@ -1,6 +1,6 @@
 # pylint: disable=import-error
 import sys
-# import threading
+import threading
 import pathlib
 import time
 import uvicorn
@@ -39,10 +39,11 @@ session = {'value_to_send':"1", 'slider_value': 0.1,'started':False}
 start = 0.0
 end =0.0
 
-# def back_end_data_process_init():
-#     """ This initialises connection_check_loop as a background thread"""
-#     x_back_end_data_process = threading.Thread(target=back_end_data_process)
-#     x_back_end_data_process.start()
+def back_end_data_process_init():
+    """ This initialises connection_check_loop as a background thread"""
+    x_back_end_data_process = threading.Thread(target=back_end_data_process)
+    x_back_end_data_process.start()
+
 
 # class BackgroundRunner:
 #     def __init__(self):
@@ -128,7 +129,7 @@ end =0.0
 # back_end_data_process_init()
 
 
-def run_main():
+def back_end_data_process():
     while True:
         # print("starting")
         global start
@@ -182,7 +183,7 @@ def run_main():
 #     session['started'] = True
 #     # asyncio.create_task(runner.run_main())
 
-run_main()
+back_end_data_process_init()
 
 @app.get("/get_value_to_send")
 async def get_value_to_send():
