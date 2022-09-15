@@ -7,7 +7,6 @@ channels:
 dependencies:
   - pandas
   - python-docx
-  - yaml
   - requests
   - fastapi
   - scikit-image
