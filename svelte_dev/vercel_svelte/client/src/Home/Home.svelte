@@ -70,25 +70,25 @@
 </script>
 
 <div class="mt-20">
-  <div class="grid grid-cols-12 gap-x-4 gap-y-16">
-    <div class="col-start-2 col-end-10  ">
+  <div class="grid grid-cols-12 gap-x-2 gap-y-16">
+    <div class="col-start-1 col-end-12 text-center ">
       <p class="text-2xl">Welcome to a really great FastAPI and Svelte demo!</p>
     </div>
-    <div class="col-start-2 col-end-10 ">
+    <div class="col-start-1 col-end-6 text-center">
       <p class="text-2xl">Value Received From FastAPI:</p>
     </div>
-    <div class="col-start-10 col-end-12 ">
+    <div class="col-start-6 col-end-12 text-left">
       <p class="text-blue-400 text-2xl">{$value_to_send}</p>
     </div>
   </div>
 </div>
 <div class="mt-10">
-  <div class="grid grid-cols-10 gap-4">
-    <div class="col-start-2 col-end-9 mb-2">
+  <div class="grid grid-cols-12 gap-1">
+    <div class="col-start-1 col-end-12 mb-2 text-center">
       <h6>Choose a character type:</h6>
     </div>
 
-    <div class="col-start-1 col-end-3 text-center">
+    <div class="col-start-1 col-end-4 text-center">
       <label>
         <input
           bind:group={slider_choice}
@@ -99,7 +99,7 @@
         <h6>Digits</h6>
       </label>
     </div>
-    <div class="col-start-3 col-end-5 text-center ">
+    <div class="col-start-4 col-end-8 text-center ">
       <label>
         <input
           bind:group={slider_choice}
@@ -110,7 +110,7 @@
         <h6>Letters</h6>
       </label>
     </div>
-    <div class="col-start-5 col-end-7 text-center">
+    <div class="col-start-8 col-end-12 text-center">
       <label>
         <input
           bind:group={slider_choice}
@@ -124,11 +124,11 @@
   </div>
 </div>
 <div class="mt-10 mb-20">
-  <div class="grid grid-cols-10 gap-y-4">
-    <div class="col-start-4 col-end-10 ">
+  <div class="grid grid-cols-12 gap-y-4">
+    <div class="col-start-1 col-end-12 text-center">
       <h6>Number of Milliseconds Between Updates:</h6>
     </div>
-    <div class="col-start-4 col-end-10 ">
+    <div class="col-start-1 col-end-12 text-center">
       <small>Value: {slider_value_front_end}</small>
 
       <Slider
