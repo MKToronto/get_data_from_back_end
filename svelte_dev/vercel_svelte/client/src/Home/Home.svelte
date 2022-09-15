@@ -21,7 +21,7 @@
     const get_value_to_send_response = await response.json();
     $value_to_send = get_value_to_send_response.value_to_send;
   }
-  import { Slider, RadioButtonGroup } from "smelte";
+  import { Slider } from "smelte";
 
   // async function send_time_sleep_to_back_end(slider_value_back_end){
   //   console.log("send_time_sleep_to_back_end", slider_value_back_end)

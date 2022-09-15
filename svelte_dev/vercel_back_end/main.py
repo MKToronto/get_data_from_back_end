@@ -250,6 +250,7 @@ async def get_global_values():
 
 @app.get("/send_slider_choice_to_back_end/{slider_choice}")
 async def send_slider_choice_to_back_end(slider_choice):
+    session['slider_choice'] = slider_choice
     if slider_choice == "Digits":
 
         if session['last_choice'] == "Digits":
@@ -281,7 +282,6 @@ async def send_slider_choice_to_back_end(slider_choice):
             session['last_choice'] = "Punctuation"
 
     session['value_to_send'] = value_to_send
-    session['slider_choice'] = slider_choice
     return "slider_choice received"
 
 
