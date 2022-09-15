@@ -5,7 +5,7 @@ import pathlib
 import time
 import uvicorn
 import asyncio
-from fastapi import FastAPI
+from fastapi import FastAPI, BackgroundTasks
 # from fastapi.staticfiles import StaticFiles
 # import subprocess
 here = pathlib.Path(__file__).resolve()
@@ -13,8 +13,8 @@ sys.path.insert(0, str(here.parents[1].absolute()))
 sys.path.insert(0, str(here.parents[0].absolute()))
 # subprocess.run("npm start", shell=True, cwd=str(here.parents[0].absolute())+"/client")
 from fastapi.middleware.cors import CORSMiddleware
-# from fastapi.concurrency import run_in_threadpool
-
+from fastapi.concurrency import run_in_threadpool
+# background_tasks = BackgroundTasks()
 app = FastAPI()
 print("str(here.parents[0].absolute())", str(here.parents[0].absolute()))
 # client_address = str(here.parents[0].absolute()) + "/client/public/"
@@ -131,6 +131,7 @@ def back_end_data_process_init():
 
 def back_end_data_process():
     while True:
+        session['started'] = True
         # print("starting")
         global start
         global end
@@ -179,11 +180,12 @@ def back_end_data_process():
 
 # @app.on_event('startup')
 # async def app_startup():
-#     await run_in_threadpool(lambda: run_main())
-#     session['started'] = True
-#     # asyncio.create_task(runner.run_main())
+    # await run_in_threadpool(lambda: back_end_data_process())
+    
+    # asyncio.create_task(back_end_data_process())
 
-back_end_data_process_init()
+if not session['started']:
+    back_end_data_process_init()
 
 @app.get("/get_value_to_send")
 async def get_value_to_send():
@@ -214,8 +216,9 @@ async def read_root():
 # app.mount('', StaticFiles(directory=client_address, html=True), name="static")
 # app.mount('', StaticFiles(directory=public, html=True), name="public")
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")
+# if __name__ == "__main__":
+#     back_end_data_process_init()
+#     uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")
     # uvicorn.run(app, host="ptc1ap.deta.dev", log_level="warning")
 
     # uvicorn.run(app, host="127.0.0.1", port=8000)
