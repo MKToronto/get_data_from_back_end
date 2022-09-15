@@ -72,8 +72,9 @@
       <div class="col-start-8 col-end-9 ">
       <p class="text-blue-400 text-2xl">{$value_to_send}</p>
     </div>
-    <div class="col-start-4 col-end-10 ">
+    
       <div class="grid grid-cols-12 gap-y-4">
+        <div class="col-start-4 col-end-10 ">
 <h6>Choose a character type:</h6>
 </div>
 
