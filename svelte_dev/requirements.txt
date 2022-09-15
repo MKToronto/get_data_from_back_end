@@ -9,4 +9,4 @@ scp
 nodejs
 
 uvicorn
-python
+
