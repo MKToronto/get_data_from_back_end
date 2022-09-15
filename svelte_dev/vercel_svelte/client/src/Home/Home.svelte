@@ -77,7 +77,7 @@
 <h6>Number of Milliseconds Between Updates On <u> FastAPI Backend </u></h6>
 </div>
 
-<div class="col-start-4 col-end-10 ">
+<div class="col-start-4 col-end-6 ">
       <label>
           <input
               
@@ -88,6 +88,8 @@
           />
           <h6>Digits</h6>
       </label>
+    </div>
+      <div class="col-start-6 col-end-8 ">
       <label>
           <input
           bind:group={slider_choice}
@@ -97,6 +99,8 @@
           />
           <h6>Letters</h6>
       </label>
+    </div>
+    <div class="col-start-8 col-end-10 ">
       <label>
       <input
       bind:group={slider_choice}
