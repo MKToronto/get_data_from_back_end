@@ -63,6 +63,7 @@ def back_end_data_process():
         session['value_to_send'] = "8"
         time.sleep(session['slider_value'])
         session['value_to_send'] = "9"
+        time.sleep(1)
 
 
 back_end_data_process_init()
