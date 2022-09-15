@@ -5366,8 +5366,8 @@ var app = (function () {
     	}
 
     	let slider0_props = {
-    		min: "500",
-    		max: "3000",
+    		min: "0",
+    		max: "2000",
     		color: "blue",
     		disabled: /*disabled*/ ctx[5]
     	};
@@ -5385,8 +5385,8 @@ var app = (function () {
     	}
 
     	let slider1_props = {
-    		min: "500",
-    		max: "3000",
+    		min: "100",
+    		max: "2000",
     		color: "blue",
     		disabled: /*disabled*/ ctx[5]
     	};
@@ -5439,31 +5439,31 @@ var app = (function () {
     			t18 = space();
     			create_component(slider1.$$.fragment);
     			attr_dev(p0, "class", "text-2xl");
-    			add_location(p0, file$1, 54, 6, 1635);
+    			add_location(p0, file$1, 54, 6, 1624);
     			attr_dev(div0, "class", "col-start-4 col-end-10 ");
-    			add_location(div0, file$1, 53, 4, 1590);
+    			add_location(div0, file$1, 53, 4, 1579);
     			attr_dev(p1, "class", "text-2xl");
-    			add_location(p1, file$1, 58, 6, 1775);
+    			add_location(p1, file$1, 58, 6, 1764);
     			attr_dev(div1, "class", "col-start-5 col-end-8 ");
-    			add_location(div1, file$1, 56, 4, 1725);
+    			add_location(div1, file$1, 56, 4, 1714);
     			attr_dev(p2, "class", "text-blue-400 text-2xl");
-    			add_location(p2, file$1, 61, 6, 1888);
+    			add_location(p2, file$1, 61, 6, 1877);
     			attr_dev(div2, "class", "col-start-8 col-end-9 ");
-    			add_location(div2, file$1, 60, 6, 1845);
-    			add_location(u0, file$1, 65, 46, 2043);
-    			add_location(h60, file$1, 65, 0, 1997);
-    			add_location(small0, file$1, 67, 0, 2074);
+    			add_location(div2, file$1, 60, 6, 1834);
+    			add_location(u0, file$1, 65, 46, 2032);
+    			add_location(h60, file$1, 65, 0, 1986);
+    			add_location(small0, file$1, 67, 0, 2063);
     			attr_dev(div3, "class", "col-start-4 col-end-10 ");
-    			add_location(div3, file$1, 63, 4, 1958);
-    			add_location(u1, file$1, 76, 54, 2392);
-    			add_location(h61, file$1, 76, 6, 2344);
-    			add_location(small1, file$1, 78, 6, 2435);
+    			add_location(div3, file$1, 63, 4, 1947);
+    			add_location(u1, file$1, 76, 54, 2379);
+    			add_location(h61, file$1, 76, 6, 2331);
+    			add_location(small1, file$1, 78, 6, 2422);
     			attr_dev(div4, "class", "col-start-4 col-end-10 ");
-    			add_location(div4, file$1, 74, 4, 2299);
+    			add_location(div4, file$1, 74, 4, 2286);
     			attr_dev(div5, "class", "grid grid-cols-12 gap-y-20");
-    			add_location(div5, file$1, 52, 2, 1545);
+    			add_location(div5, file$1, 52, 2, 1534);
     			attr_dev(div6, "class", "mt-20");
-    			add_location(div6, file$1, 51, 0, 1523);
+    			add_location(div6, file$1, 51, 0, 1512);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5566,7 +5566,7 @@ var app = (function () {
 
     	onMount(async () => {
     		get_value_to_send();
-    		make_new_get_value_to_send_interval(50);
+    		make_new_get_value_to_send_interval(100);
     	});
 
     	onDestroy(() => {
@@ -5575,14 +5575,14 @@ var app = (function () {
     	});
 
     	async function get_value_to_send() {
-    		const response = await fetch("https://my-micro-3-mktoronto.vercel.app/get_value_to_send");
+    		const response = await fetch("https://get-data-python.vercel.app/get_value_to_send");
     		const get_value_to_send_response = await response.json();
     		set_store_value(value_to_send, $value_to_send = get_value_to_send_response.value_to_send, $value_to_send);
     	}
 
     	async function send_time_sleep_to_back_end(slider_value_back_end) {
     		console.log("send_time_sleep_to_back_end", slider_value_back_end);
-    		const response = await fetch("https://my-micro-3-mktoronto.vercel.app/send_time_sleep_to_back_end/" + slider_value_back_end);
+    		const response = await fetch("https://get-data-python.vercel.app/send_time_sleep_to_back_end/" + slider_value_back_end);
     		await response.json();
     	}
 
@@ -5650,8 +5650,8 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	$$invalidate(0, slider_value_back_end = 500);
-    	$$invalidate(1, slider_value_front_end = 500);
+    	$$invalidate(0, slider_value_back_end = 0);
+    	$$invalidate(1, slider_value_front_end = 100);
 
     	return [
     		slider_value_back_end,

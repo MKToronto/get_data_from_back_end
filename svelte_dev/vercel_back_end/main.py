@@ -3,10 +3,10 @@ import sys
 # import threading
 import pathlib
 import time
-import uvicorn
+# import uvicorn
 import asyncio
 from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
+# from fastapi.staticfiles import StaticFiles
 # import subprocess
 here = pathlib.Path(__file__).resolve()
 sys.path.insert(0, str(here.parents[1].absolute()))
@@ -17,7 +17,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 print("str(here.parents[0].absolute())", str(here.parents[0].absolute()))
 # client_address = str(here.parents[0].absolute()) + "/client/public/"
-client_address = "client/public/" 
+# client_address = "client/public/" 
 # origins = [
 #     "https://ptc1ap.deta.dev/",
 #     "http://ptc1ap.deta.dev/",
@@ -155,11 +155,11 @@ async def read_root():
 #     return {"value_to_send": session['value_to_send']}
 
 # Place After All Other Routes
-app.mount('', StaticFiles(directory=client_address, html=True), name="static")
+# app.mount('', StaticFiles(directory=client_address, html=True), name="static")
 # app.mount('', StaticFiles(directory=public, html=True), name="public")
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")
     # uvicorn.run(app, host="ptc1ap.deta.dev", log_level="warning")
 
     # uvicorn.run(app, host="127.0.0.1", port=8000)
