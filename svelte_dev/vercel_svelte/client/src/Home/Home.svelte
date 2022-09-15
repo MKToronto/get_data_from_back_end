@@ -12,18 +12,26 @@
     console.log("destroyed get_value_to_send_interval");
   });
 
-  async function get_value_to_send() {
+  async function get_value_to_send(slider_choice) {
     const response = await fetch("https://get-data-python.vercel.app/get_value_to_send");
     const get_value_to_send_response = await response.json();
     $value_to_send = get_value_to_send_response.value_to_send;
   }
   import {
-    Slider,
+    Slider,RadioButtonGroup
   } from "smelte";
 
-  async function send_time_sleep_to_back_end(slider_value_back_end){
-    console.log("send_time_sleep_to_back_end", slider_value_back_end)
-    const response = await fetch("https://get-data-python.vercel.app/send_time_sleep_to_back_end/"+slider_value_back_end);
+  // async function send_time_sleep_to_back_end(slider_value_back_end){
+  //   console.log("send_time_sleep_to_back_end", slider_value_back_end)
+  //   const response = await fetch("https://get-data-python.vercel.app/send_time_sleep_to_back_end/"+slider_value_back_end);
+  //   const get_value_to_send_response = await response.json();
+
+
+  // }
+
+  async function send_slider_choice_to_back_end(slider_choice){
+    console.log("send_slider_choice_to_back_end", slider_choice)
+    const response = await fetch("https://get-data-python.vercel.app/send_slider_choice_to_back_end/"+slider_choice);
     const get_value_to_send_response = await response.json();
 
 
@@ -44,6 +52,9 @@
 
   let slider_value_front_end;
   $: slider_value_front_end = 100
+
+  let slider_choice;
+  $: slider_choice = "Digits"
   // let value2 = 0;
   let disabled = false;
 
@@ -65,13 +76,42 @@
 
 <h6>Number of Milliseconds Between Updates On <u> FastAPI Backend </u></h6>
 
-<small>Value: {slider_value_back_end}</small>
 
-<Slider min="100" max="2000" color="blue" bind:value={slider_value_back_end} {disabled} on:change={() => send_time_sleep_to_back_end(slider_value_back_end)} />
-
-
-
+<div class="col-md-3 text-center">
+      <label>
+          <input
+              
+              bind:group={slider_choice}
+              on:change={send_slider_choice_to_back_end(slider_choice)}
+              type="radio"
+              value="Digits"
+          />
+          <h6>On</h6>
+          <h6>Images Saved Automatically</h6>
+      </label>
+      <label>
+          <input
+          bind:group={slider_choice}
+          on:change={send_slider_choice_to_back_end(slider_choice)}
+              type="radio"
+              value="Letters"
+          />
+          <h6>On</h6>
+          <h6>Images Saved Automatically</h6>
+      </label>
+      <label>
+      <input
+      bind:group={slider_choice}
+      on:change={send_slider_choice_to_back_end(slider_choice)}
+          type="radio"
+          value="Punctuation"
+      />
+      <h6>On</h6>
+      <h6>Images Saved Automatically</h6>
+  </label>
     </div>
+  </div>
+
     <div class="col-start-4 col-end-10 ">
 
       <h6>Number of Milliseconds Between Updates From <u>Svelte Front End</u> </h6>
