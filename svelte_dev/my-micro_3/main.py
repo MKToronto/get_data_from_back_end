@@ -34,7 +34,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 session = {'value_to_send': '0', 'slider_value': 0.1}
-
+start = 0.0
+end =0.0
 
 def back_end_data_process_init():
     """ This initialises connection_check_loop as a background thread"""
@@ -45,6 +46,9 @@ def back_end_data_process_init():
 def back_end_data_process():
 
     while True:
+        global start
+        global end
+        start = time.time()
         time.sleep(session['slider_value'])
         session['value_to_send'] = "1"
         time.sleep(session['slider_value'])
@@ -63,6 +67,7 @@ def back_end_data_process():
         session['value_to_send'] = "8"
         time.sleep(session['slider_value'])
         session['value_to_send'] = "9"
+        end = time.time()
         time.sleep(1)
 
 
@@ -82,7 +87,9 @@ async def send_time_sleep_to_back_end(slider_value):
 
 @app.get("/")
 async def read_root():
-    return {"Hello": "World1234"}
+    total = end - start
+    return {"Hello": "World1234",
+    "end-start": total}
 
 # @app.get("/get_value_to_send")
 # async def get_value_to_send():
