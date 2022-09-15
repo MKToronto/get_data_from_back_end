@@ -40,7 +40,7 @@
   }
 
   async function get_global_values() {
-    console.log("get_global_values", get_global_values);
+    console.log("get_global_values");
     const response = await fetch(
       "https://get-data-python.vercel.app/get_global_values"
     );
