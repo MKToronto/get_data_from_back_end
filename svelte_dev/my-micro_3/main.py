@@ -54,32 +54,32 @@ class BackgroundRunner:
             global end
             start = time.time()
             print("starting1")
-            await asyncio.sleep(session['slider_value'])
+            await asyncio.sleep(float(session['slider_value']))
             session['value_to_send'] = "1"
             self.value = "1"
             print("starting 2")
-            await asyncio.sleep(session['slider_value'])
+            await asyncio.sleep(float(session['slider_value']))
             session['value_to_send'] = "2"
             self.value = "2"
-            await asyncio.sleep(session['slider_value'])
+            await asyncio.sleep(float(session['slider_value']))
             session['value_to_send'] = "3"
             self.value = "3"
-            await asyncio.sleep(session['slider_value'])
+            await asyncio.sleep(float(session['slider_value']))
             session['value_to_send'] = "4"
             self.value = "4"
-            await asyncio.sleep(session['slider_value'])
+            await asyncio.sleep(float(session['slider_value']))
             session['value_to_send'] = "5"
             self.value = "5"
-            await asyncio.sleep(session['slider_value'])
+            await asyncio.sleep(float(session['slider_value']))
             session['value_to_send'] = "6"
             self.value = "6"
-            await asyncio.sleep(session['slider_value'])
+            await asyncio.sleep(float(session['slider_value']))
             session['value_to_send'] = "7"
             self.value = "7"
-            await asyncio.sleep(session['slider_value'])
+            await asyncio.sleep(float(session['slider_value']))
             session['value_to_send'] = "8"
             self.value = "8"
-            await asyncio.sleep(session['slider_value'])
+            await asyncio.sleep(float(session['slider_value']))
             session['value_to_send'] = "9"
             self.value = "9"
             end = time.time()
