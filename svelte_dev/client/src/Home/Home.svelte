@@ -13,7 +13,7 @@
   });
 
   async function get_value_to_send() {
-    const response = await fetch("https://my-micro-3-mktoronto.vercel.app/get_value_to_send");
+    const response = await fetch("https://get-data-python.vercel.app/get_value_to_send");
     const get_value_to_send_response = await response.json();
     $value_to_send = get_value_to_send_response.value_to_send;
   }
@@ -23,7 +23,7 @@
 
   async function send_time_sleep_to_back_end(slider_value_back_end){
     console.log("send_time_sleep_to_back_end", slider_value_back_end)
-    const response = await fetch("https://my-micro-3-mktoronto.vercel.app/send_time_sleep_to_back_end/"+slider_value_back_end);
+    const response = await fetch("https://get-data-python.vercel.app/send_time_sleep_to_back_end/"+slider_value_back_end);
     const get_value_to_send_response = await response.json();
 
 
