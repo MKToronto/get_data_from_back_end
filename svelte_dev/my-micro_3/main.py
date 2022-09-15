@@ -49,26 +49,26 @@ def back_end_data_process():
         global start
         global end
         start = time.time()
-        time.sleep(session['slider_value'])
+        # time.sleep(session['slider_value'])
         session['value_to_send'] = "1"
-        time.sleep(session['slider_value'])
+        # time.sleep(session['slider_value'])
         session['value_to_send'] = "2"
-        time.sleep(session['slider_value'])
+        # time.sleep(session['slider_value'])
         session['value_to_send'] = "3"
-        time.sleep(session['slider_value'])
+        # time.sleep(session['slider_value'])
         session['value_to_send'] = "4"
-        time.sleep(session['slider_value'])
+        # time.sleep(session['slider_value'])
         session['value_to_send'] = "5"
-        time.sleep(session['slider_value'])
+        # time.sleep(session['slider_value'])
         session['value_to_send'] = "6"
-        time.sleep(session['slider_value'])
+        # time.sleep(session['slider_value'])
         session['value_to_send'] = "7"
-        time.sleep(session['slider_value'])
+        # time.sleep(session['slider_value'])
         session['value_to_send'] = "8"
-        time.sleep(session['slider_value'])
+        # time.sleep(session['slider_value'])
         session['value_to_send'] = "9"
         end = time.time()
-        time.sleep(1)
+        # time.sleep(1)
 
 
 back_end_data_process_init()
