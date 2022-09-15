@@ -1,0 +1,1 @@
+{"id":"b945b887-9e99-44f0-a3f0-3cf49bb31d70","space":32239,"runtime":"python3.9","name":"my-micro","path":"ptc1ap","project":"b0uhe2ba","account":"144798365827","region":"us-east-1","deps":["fastapi","uvicorn"],"envs":null,"public":true,"log_level":"debug","cron":""}

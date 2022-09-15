@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+public/bundle.*
+client/public/production_image_data
+client/public/production_temp_collections
+client/public/simulation_image_data
+client/public/simulation_temp_collections
+dump.rdb
