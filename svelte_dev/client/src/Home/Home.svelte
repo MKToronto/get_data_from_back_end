@@ -40,10 +40,10 @@
   }
 
   let slider_value_back_end;
-  $: slider_value_back_end = 1
+  $: slider_value_back_end = 500
 
   let slider_value_front_end;
-  $: slider_value_front_end = 1
+  $: slider_value_front_end = 500
   // let value2 = 0;
   let disabled = false;
 

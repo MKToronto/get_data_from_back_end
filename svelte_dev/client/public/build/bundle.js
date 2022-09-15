@@ -5439,31 +5439,31 @@ var app = (function () {
     			t18 = space();
     			create_component(slider1.$$.fragment);
     			attr_dev(p0, "class", "text-2xl");
-    			add_location(p0, file$1, 54, 6, 1599);
+    			add_location(p0, file$1, 54, 6, 1603);
     			attr_dev(div0, "class", "col-start-4 col-end-10 ");
-    			add_location(div0, file$1, 53, 4, 1554);
+    			add_location(div0, file$1, 53, 4, 1558);
     			attr_dev(p1, "class", "text-2xl");
-    			add_location(p1, file$1, 58, 6, 1739);
+    			add_location(p1, file$1, 58, 6, 1743);
     			attr_dev(div1, "class", "col-start-5 col-end-8 ");
-    			add_location(div1, file$1, 56, 4, 1689);
+    			add_location(div1, file$1, 56, 4, 1693);
     			attr_dev(p2, "class", "text-blue-400 text-2xl");
-    			add_location(p2, file$1, 61, 6, 1852);
+    			add_location(p2, file$1, 61, 6, 1856);
     			attr_dev(div2, "class", "col-start-8 col-end-9 ");
-    			add_location(div2, file$1, 60, 6, 1809);
-    			add_location(u0, file$1, 65, 46, 2007);
-    			add_location(h60, file$1, 65, 0, 1961);
-    			add_location(small0, file$1, 67, 0, 2038);
+    			add_location(div2, file$1, 60, 6, 1813);
+    			add_location(u0, file$1, 65, 46, 2011);
+    			add_location(h60, file$1, 65, 0, 1965);
+    			add_location(small0, file$1, 67, 0, 2042);
     			attr_dev(div3, "class", "col-start-4 col-end-10 ");
-    			add_location(div3, file$1, 63, 4, 1922);
-    			add_location(u1, file$1, 76, 54, 2356);
-    			add_location(h61, file$1, 76, 6, 2308);
-    			add_location(small1, file$1, 78, 6, 2399);
+    			add_location(div3, file$1, 63, 4, 1926);
+    			add_location(u1, file$1, 76, 54, 2360);
+    			add_location(h61, file$1, 76, 6, 2312);
+    			add_location(small1, file$1, 78, 6, 2403);
     			attr_dev(div4, "class", "col-start-4 col-end-10 ");
-    			add_location(div4, file$1, 74, 4, 2263);
+    			add_location(div4, file$1, 74, 4, 2267);
     			attr_dev(div5, "class", "grid grid-cols-12 gap-y-20");
-    			add_location(div5, file$1, 52, 2, 1509);
+    			add_location(div5, file$1, 52, 2, 1513);
     			attr_dev(div6, "class", "mt-20");
-    			add_location(div6, file$1, 51, 0, 1487);
+    			add_location(div6, file$1, 51, 0, 1491);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5650,8 +5650,8 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	$$invalidate(0, slider_value_back_end = 1);
-    	$$invalidate(1, slider_value_front_end = 1);
+    	$$invalidate(0, slider_value_back_end = 500);
+    	$$invalidate(1, slider_value_front_end = 500);
 
     	return [
     		slider_value_back_end,
