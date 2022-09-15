@@ -35,7 +35,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-session = {'value_to_send':"1", 'slider_value': 0.1}
+session = {'value_to_send':"1", 'slider_value': 0.1,'started':False}
 start = 0.0
 end =0.0
 
@@ -134,50 +134,51 @@ def run_main():
         global start
         global end
         start = time.time()
-        print("session['value_to_send']", session['value_to_send'])
+        print("new_value", session['value_to_send'])
         time.sleep(float(session['slider_value']))
         session['value_to_send'] = "1"
         # value = "1"
-        print("session['value_to_send']", session['value_to_send'])
+        print("new_value", session['value_to_send'])
         # print("starting 2")
         time.sleep(float(session['slider_value']))
         session['value_to_send'] = "2"
         # value = "2"
-        print("session['value_to_send']", session['value_to_send'])
+        print("new_value", session['value_to_send'])
         # print("starting 3")
         time.sleep(float(session['slider_value']))        
         session['value_to_send'] = "3"
         # value = "3"
-        print("session['value_to_send']", session['value_to_send'])
+        print("new_value", session['value_to_send'])
         time.sleep(float(session['slider_value']))
         session['value_to_send'] = "4"
         # value = "4"
-        print("session['value_to_send']", session['value_to_send'])
+        print("new_value", session['value_to_send'])
         time.sleep(float(session['slider_value']))
         session['value_to_send'] = "5"
         # value = "5"
-        print("session['value_to_send']", session['value_to_send'])
+        print("new_value", session['value_to_send'])
         time.sleep(float(session['slider_value']))
         session['value_to_send'] = "6"
         # value = "6"
-        print("session['value_to_send']", session['value_to_send'])
+        print("new_value", session['value_to_send'])
         time.sleep(float(session['slider_value']))
         session['value_to_send'] = "7"
         # value = "7"
-        print("session['value_to_send']", session['value_to_send'])
+        print("new_value", session['value_to_send'])
         time.sleep(float(session['slider_value']))
         session['value_to_send'] = "8"
         # value = "8"
-        print("session['value_to_send']", session['value_to_send'])
+        print("new_value", session['value_to_send'])
         time.sleep(float(session['slider_value']))
         session['value_to_send'] = "9"
         # value = "9"
-        print("session['value_to_send']", session['value_to_send'])
+        print("new_value", session['value_to_send'])
         end = time.time()
 
 @app.on_event('startup')
 async def app_startup():
     await run_in_threadpool(lambda: run_main())
+    session['started'] = True
     # asyncio.create_task(runner.run_main())
 
 @app.get("/get_value_to_send")
@@ -197,7 +198,8 @@ async def read_root():
     return {"Hello": "World1234",
     "end-start": total,
     "session['slider_value']":session['slider_value'],
-    "session['value_to_send']":session['value_to_send']
+    "session['value_to_send']":session['value_to_send'],
+    "session['started']":session['started']
     }
 
 # @app.get("/get_value_to_send")
