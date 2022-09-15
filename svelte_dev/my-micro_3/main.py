@@ -89,7 +89,10 @@ async def send_time_sleep_to_back_end(slider_value):
 async def read_root():
     total = end - start
     return {"Hello": "World1234",
-    "end-start": total}
+    "end-start": total,
+    "session['slider_value']":session['slider_value'],
+    "session['value_to_send']":session['value_to_send']
+    }
 
 # @app.get("/get_value_to_send")
 # async def get_value_to_send():
