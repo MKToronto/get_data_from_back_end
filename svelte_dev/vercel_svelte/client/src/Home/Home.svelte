@@ -75,9 +75,9 @@
     <div class="col-start-4 col-end-10 ">
 
 <h6>Number of Milliseconds Between Updates On <u> FastAPI Backend </u></h6>
+</div>
 
-
-
+<div class="col-start-4 col-end-10 ">
       <label>
           <input
               
