@@ -71,10 +71,10 @@
 
 <div class="mt-20">
   <div class="grid grid-cols-12 gap-x-2 gap-y-16">
-    <div class="col-start-2 col-end-12  ">
+    <div class="col-start-2 col-end-12 text-center ">
       <p class="text-2xl">Welcome to a really great FastAPI and Svelte demo!</p>
     </div>
-    <div class="col-start-2 col-span-12 ">
+    <div class="col-start-2 col-span-12 text-center">
       <p class="text-2xl">Value Received From FastAPI:</p><p class="text-blue-400 text-2xl">{$value_to_send}</p>
     </div>
     <!-- <div class="col-span-1 col-end-13 text-left">
@@ -84,11 +84,11 @@
 </div>
 <div class="mt-10">
   <div class="grid grid-cols-12 gap-1">
-    <div class="col-start-2 col-span-7  mb-2 ">
+    <div class="col-start-2 col-span-7 text-center mb-2 ">
       <h6>Choose a character type:</h6>
     </div>
 
-    <div class="col-start-2 col-span-2 ">
+    <div class="col-start-2 col-span-2 text-center">
       <label>
         <input
           bind:group={slider_choice}
@@ -99,7 +99,7 @@
         <h6>Digits</h6>
       </label>
     </div>
-    <div class="col-span-2  ">
+    <div class="col-span-2 text-center ">
       <label>
         <input
           bind:group={slider_choice}
@@ -110,7 +110,7 @@
         <h6>Letters</h6>
       </label>
     </div>
-    <div class="col-span-2   ">
+    <div class="col-span-2  text-center ">
       <label>
         <input
           bind:group={slider_choice}
@@ -125,13 +125,13 @@
 </div>
 <div class="mt-10 mb-20">
   <div class="grid grid-cols-12 gap-y-4">
-    <div class="col-start-2 col-span-6 ">
+    <div class="col-start-2 col-span-6 text-center">
       <h6>Number of Milliseconds Between Updates:</h6>
     </div>
-    <div class="col-start-2 col-span-2 ">
+    <div class="col-start-2 col-span-2 text-center">
       <small>Value: {slider_value_front_end}</small>
     </div>
-      <div class="col-start-2 col-span-8 ">
+      <div class="col-start-4 col-span-9 ">
       <Slider
         min="100"
         max="2000"
