@@ -58,7 +58,7 @@
 </script>
 
 <div class="mt-20">
-  <div class="grid grid-cols-12 gap-y-20">
+  <div class="grid grid-cols-12 gap-y-16">
     <div class="col-start-4 col-end-10  ">
       <p class="text-2xl">Welcome to a really great FastAPI and Svelte demo!</p>
     </div>
@@ -69,8 +69,10 @@
       <p class="text-blue-400 text-2xl">{$value_to_send}</p>
     </div>
   </div>
+</div>
+<div class="mt-10">
   <div class="grid grid-cols-12 gap-y-4">
-    <div class="col-start-4 col-end-10 ">
+    <div class="col-start-4 col-end-10 mb-2">
       <h6>Choose a character type:</h6>
     </div>
 
@@ -108,10 +110,13 @@
       </label>
     </div>
   </div>
+</div>
+<div class="mt-20">
   <div class="grid grid-cols-12 gap-y-20">
-    <div class="col-start-4 col-end-10 ">
+    <div class="col-start-4 col-end-10 mb-2">
       <h6>Number of Milliseconds Between Updates:</h6>
-
+    </div>
+    <div class="col-start-4 col-end-10 mb-2">
       <small>Value: {slider_value_front_end}</small>
 
       <Slider
