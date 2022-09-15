@@ -35,7 +35,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-session = {'slider_value': 0.1}
+session = {'value_to_send':"1", 'slider_value': 0.1}
 start = 0.0
 end =0.0
 
@@ -128,48 +128,48 @@ end =0.0
 # back_end_data_process_init()
 
 
-async def run_main():
+def run_main():
     while True:
         # print("starting")
         global start
         global end
         start = time.time()
         print("session['value_to_send']", session['value_to_send'])
-        await asyncio.sleep(float(session['slider_value']))
+        time.sleep(float(session['slider_value']))
         session['value_to_send'] = "1"
         # value = "1"
         print("session['value_to_send']", session['value_to_send'])
         # print("starting 2")
-        await asyncio.sleep(float(session['slider_value']))
+        time.sleep(float(session['slider_value']))
         session['value_to_send'] = "2"
         # value = "2"
         print("session['value_to_send']", session['value_to_send'])
         # print("starting 3")
-        await asyncio.sleep(float(session['slider_value']))
+        time.sleep(float(session['slider_value']))        
         session['value_to_send'] = "3"
         # value = "3"
         print("session['value_to_send']", session['value_to_send'])
-        await asyncio.sleep(float(session['slider_value']))
+        time.sleep(float(session['slider_value']))
         session['value_to_send'] = "4"
         # value = "4"
         print("session['value_to_send']", session['value_to_send'])
-        await asyncio.sleep(float(session['slider_value']))
+        time.sleep(float(session['slider_value']))
         session['value_to_send'] = "5"
         # value = "5"
         print("session['value_to_send']", session['value_to_send'])
-        await asyncio.sleep(float(session['slider_value']))
+        time.sleep(float(session['slider_value']))
         session['value_to_send'] = "6"
         # value = "6"
         print("session['value_to_send']", session['value_to_send'])
-        await asyncio.sleep(float(session['slider_value']))
+        time.sleep(float(session['slider_value']))
         session['value_to_send'] = "7"
         # value = "7"
         print("session['value_to_send']", session['value_to_send'])
-        await asyncio.sleep(float(session['slider_value']))
+        time.sleep(float(session['slider_value']))
         session['value_to_send'] = "8"
         # value = "8"
         print("session['value_to_send']", session['value_to_send'])
-        await asyncio.sleep(float(session['slider_value']))
+        time.sleep(float(session['slider_value']))
         session['value_to_send'] = "9"
         # value = "9"
         print("session['value_to_send']", session['value_to_send'])
