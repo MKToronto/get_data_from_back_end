@@ -83,7 +83,7 @@
   </div>
 </div>
 <div class="mt-10">
-  <div class="grid grid-cols-12 gap-y-4">
+  <div class="grid grid-cols-12 gap-4">
     <div class="col-start-4 col-end-10 mb-2">
       <h6>Choose a character type:</h6>
     </div>
@@ -123,7 +123,7 @@
     </div>
   </div>
 </div>
-<div class="mt-10">
+<div class="mt-10 mb-20">
   <div class="grid grid-cols-12 gap-y-4">
     <div class="col-start-4 col-end-10 ">
       <h6>Number of Milliseconds Between Updates:</h6>
