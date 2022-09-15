@@ -3,7 +3,7 @@ import sys
 # import threading
 import pathlib
 import time
-# import uvicorn
+import uvicorn
 import asyncio
 from fastapi import FastAPI
 # from fastapi.staticfiles import StaticFiles
@@ -157,8 +157,8 @@ async def read_root():
 # app.mount('', StaticFiles(directory=client_address, html=True), name="static")
 # app.mount('', StaticFiles(directory=public, html=True), name="public")
 
-# if __name__ == "__main__":
-#     uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")
     # uvicorn.run(app, host="ptc1ap.deta.dev", log_level="warning")
 
     # uvicorn.run(app, host="127.0.0.1", port=8000)
