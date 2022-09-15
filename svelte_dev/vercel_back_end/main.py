@@ -34,7 +34,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-session = {'value_to_send': '0', 'slider_value': 0.1}
+session = {'slider_value': 0.1}
 start = 0.0
 end =0.0
 
@@ -140,14 +140,13 @@ async def send_time_sleep_to_back_end(slider_value):
     session['slider_value'] = int(slider_value)/1000
     return "slider_value received"
 
-@app.get("/stats")
+@app.get("/")
 async def read_root():
     total = end - start
     return {"Hello": "World1234",
     "end-start": total,
     "session['slider_value']":session['slider_value'],
-    "runner.value":runner.value,
-    "session['value_to_send']":session['value_to_send']
+    "runner.value":runner.value
     }
 
 # @app.get("/get_value_to_send")
