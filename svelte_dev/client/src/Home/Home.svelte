@@ -4,7 +4,7 @@
   let get_value_to_send_interval;
   onMount(async () => {
     get_value_to_send();
-    make_new_get_value_to_send_interval(50)
+    make_new_get_value_to_send_interval(500)
   });
 
   onDestroy(() => {
