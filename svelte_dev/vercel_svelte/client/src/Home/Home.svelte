@@ -77,7 +77,7 @@
 <h6>Number of Milliseconds Between Updates On <u> FastAPI Backend </u></h6>
 
 
-<div class="col-md-3 text-center">
+
       <label>
           <input
               
@@ -86,8 +86,7 @@
               type="radio"
               value="Digits"
           />
-          <h6>On</h6>
-          <h6>Images Saved Automatically</h6>
+          <h6>Digits</h6>
       </label>
       <label>
           <input
@@ -96,8 +95,7 @@
               type="radio"
               value="Letters"
           />
-          <h6>On</h6>
-          <h6>Images Saved Automatically</h6>
+          <h6>Letters</h6>
       </label>
       <label>
       <input
@@ -106,10 +104,8 @@
           type="radio"
           value="Punctuation"
       />
-      <h6>On</h6>
-      <h6>Images Saved Automatically</h6>
+      <h6>Punctuation</h6>
   </label>
-    </div>
   </div>
 
     <div class="col-start-4 col-end-10 ">
