@@ -84,11 +84,11 @@
 </div>
 <div class="mt-10">
   <div class="grid grid-cols-12 gap-1">
-    <div class="col-start-2 col-span-7 text-center mb-2 ">
+    <div class="col-start-2 col-span-11 text-center mb-2 ">
       <h6>Choose a character type:</h6>
     </div>
 
-    <div class="col-start-2 col-span-2 text-center">
+    <div class="col-start-2 col-span-3 text-center">
       <label>
         <input
           bind:group={slider_choice}
@@ -99,7 +99,7 @@
         <h6>Digits</h6>
       </label>
     </div>
-    <div class="col-span-2 text-center ">
+    <div class="col-span-3 text-center ">
       <label>
         <input
           bind:group={slider_choice}
@@ -110,7 +110,7 @@
         <h6>Letters</h6>
       </label>
     </div>
-    <div class="col-span-2  text-center ">
+    <div class="col-span-3  text-center ">
       <label>
         <input
           bind:group={slider_choice}
@@ -125,13 +125,13 @@
 </div>
 <div class="mt-10 mb-20">
   <div class="grid grid-cols-12 gap-y-4">
-    <div class="col-start-2 col-span-6 text-center">
+    <div class="col-start-2 col-span-11 text-center">
       <h6>Number of Milliseconds Between Updates:</h6>
     </div>
-    <div class="col-start-2 col-span-2 text-center">
+    <div class="col-start-2 col-span-11 text-center">
       <small>Value: {slider_value_front_end}</small>
     </div>
-      <div class="col-start-4 col-span-9 ">
+      <div class="col-start-4 col-span-7 ">
       <Slider
         min="100"
         max="2000"
