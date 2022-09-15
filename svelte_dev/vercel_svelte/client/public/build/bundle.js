@@ -7073,15 +7073,15 @@ var app = (function () {
     			add_location(div9, file$1, 73, 2, 2417);
     			attr_dev(div10, "class", "mt-10");
     			add_location(div10, file$1, 72, 0, 2395);
-    			add_location(h64, file$1, 116, 6, 3584);
-    			attr_dev(div11, "class", "col-start-4 col-end-10 mb-2");
-    			add_location(div11, file$1, 115, 4, 3536);
-    			add_location(small, file$1, 119, 6, 3696);
-    			attr_dev(div12, "class", "col-start-4 col-end-10 mb-2");
-    			add_location(div12, file$1, 118, 4, 3648);
-    			attr_dev(div13, "class", "grid grid-cols-12 gap-y-20");
+    			add_location(h64, file$1, 116, 6, 3579);
+    			attr_dev(div11, "class", "col-start-4 col-end-10 ");
+    			add_location(div11, file$1, 115, 4, 3535);
+    			add_location(small, file$1, 119, 6, 3687);
+    			attr_dev(div12, "class", "col-start-4 col-end-10 ");
+    			add_location(div12, file$1, 118, 4, 3643);
+    			attr_dev(div13, "class", "grid grid-cols-12 gap-y-4");
     			add_location(div13, file$1, 114, 2, 3491);
-    			attr_dev(div14, "class", "mt-20");
+    			attr_dev(div14, "class", "mt-10");
     			add_location(div14, file$1, 113, 0, 3469);
     		},
     		l: function claim(nodes) {

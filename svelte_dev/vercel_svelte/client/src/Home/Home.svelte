@@ -111,12 +111,12 @@
     </div>
   </div>
 </div>
-<div class="mt-20">
-  <div class="grid grid-cols-12 gap-y-20">
-    <div class="col-start-4 col-end-10 mb-2">
+<div class="mt-10">
+  <div class="grid grid-cols-12 gap-y-4">
+    <div class="col-start-4 col-end-10 ">
       <h6>Number of Milliseconds Between Updates:</h6>
     </div>
-    <div class="col-start-4 col-end-10 mb-2">
+    <div class="col-start-4 col-end-10 ">
       <small>Value: {slider_value_front_end}</small>
 
       <Slider
