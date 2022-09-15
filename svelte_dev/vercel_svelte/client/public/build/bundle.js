@@ -7024,65 +7024,65 @@ var app = (function () {
     			t21 = space();
     			create_component(slider.$$.fragment);
     			attr_dev(p0, "class", "text-2xl");
-    			add_location(p0, file$1, 62, 6, 2069);
+    			add_location(p0, file$1, 74, 6, 2442);
     			attr_dev(div0, "class", "col-start-4 col-end-10 ");
-    			add_location(div0, file$1, 61, 4, 2024);
+    			add_location(div0, file$1, 73, 4, 2397);
     			attr_dev(p1, "class", "text-2xl");
-    			add_location(p1, file$1, 65, 6, 2202);
+    			add_location(p1, file$1, 77, 6, 2575);
     			attr_dev(div1, "class", "col-start-5 col-end-8 ");
-    			add_location(div1, file$1, 64, 4, 2159);
+    			add_location(div1, file$1, 76, 4, 2532);
     			attr_dev(p2, "class", "text-blue-400 text-2xl");
-    			add_location(p2, file$1, 68, 6, 2313);
+    			add_location(p2, file$1, 80, 6, 2686);
     			attr_dev(div2, "class", "col-start-8 col-end-9 ");
-    			add_location(div2, file$1, 67, 4, 2270);
+    			add_location(div2, file$1, 79, 4, 2643);
     			attr_dev(div3, "class", "grid grid-cols-12 gap-y-16");
-    			add_location(div3, file$1, 60, 2, 1979);
+    			add_location(div3, file$1, 72, 2, 2352);
     			attr_dev(div4, "class", "mt-20");
-    			add_location(div4, file$1, 59, 0, 1957);
-    			add_location(h60, file$1, 75, 6, 2509);
+    			add_location(div4, file$1, 71, 0, 2330);
+    			add_location(h60, file$1, 87, 6, 2882);
     			attr_dev(div5, "class", "col-start-4 col-end-10 mb-2");
-    			add_location(div5, file$1, 74, 4, 2461);
+    			add_location(div5, file$1, 86, 4, 2834);
     			attr_dev(input0, "type", "radio");
     			input0.__value = "Digits";
     			input0.value = input0.__value;
     			/*$$binding_groups*/ ctx[7][0].push(input0);
-    			add_location(input0, file$1, 80, 8, 2629);
-    			add_location(h61, file$1, 86, 8, 2808);
-    			add_location(label0, file$1, 79, 6, 2613);
+    			add_location(input0, file$1, 92, 8, 3002);
+    			add_location(h61, file$1, 98, 8, 3181);
+    			add_location(label0, file$1, 91, 6, 2986);
     			attr_dev(div6, "class", "col-start-4 col-end-5 text-center");
-    			add_location(div6, file$1, 78, 4, 2559);
+    			add_location(div6, file$1, 90, 4, 2932);
     			attr_dev(input1, "type", "radio");
     			input1.__value = "Letters";
     			input1.value = input1.__value;
     			/*$$binding_groups*/ ctx[7][0].push(input1);
-    			add_location(input1, file$1, 91, 8, 2925);
-    			add_location(h62, file$1, 97, 8, 3105);
-    			add_location(label1, file$1, 90, 6, 2909);
+    			add_location(input1, file$1, 103, 8, 3298);
+    			add_location(h62, file$1, 109, 8, 3478);
+    			add_location(label1, file$1, 102, 6, 3282);
     			attr_dev(div7, "class", "col-start-5 col-end-6 text-center ");
-    			add_location(div7, file$1, 89, 4, 2854);
+    			add_location(div7, file$1, 101, 4, 3227);
     			attr_dev(input2, "type", "radio");
     			input2.__value = "Punctuation";
     			input2.value = input2.__value;
     			/*$$binding_groups*/ ctx[7][0].push(input2);
-    			add_location(input2, file$1, 102, 8, 3222);
-    			add_location(h63, file$1, 108, 8, 3406);
-    			add_location(label2, file$1, 101, 6, 3206);
+    			add_location(input2, file$1, 114, 8, 3595);
+    			add_location(h63, file$1, 120, 8, 3779);
+    			add_location(label2, file$1, 113, 6, 3579);
     			attr_dev(div8, "class", "col-start-6 col-end-7 text-center");
-    			add_location(div8, file$1, 100, 4, 3152);
+    			add_location(div8, file$1, 112, 4, 3525);
     			attr_dev(div9, "class", "grid grid-cols-12 gap-y-4");
-    			add_location(div9, file$1, 73, 2, 2417);
+    			add_location(div9, file$1, 85, 2, 2790);
     			attr_dev(div10, "class", "mt-10");
-    			add_location(div10, file$1, 72, 0, 2395);
-    			add_location(h64, file$1, 116, 6, 3579);
+    			add_location(div10, file$1, 84, 0, 2768);
+    			add_location(h64, file$1, 128, 6, 3952);
     			attr_dev(div11, "class", "col-start-4 col-end-10 ");
-    			add_location(div11, file$1, 115, 4, 3535);
-    			add_location(small, file$1, 119, 6, 3687);
+    			add_location(div11, file$1, 127, 4, 3908);
+    			add_location(small, file$1, 131, 6, 4060);
     			attr_dev(div12, "class", "col-start-4 col-end-10 ");
-    			add_location(div12, file$1, 118, 4, 3643);
+    			add_location(div12, file$1, 130, 4, 4016);
     			attr_dev(div13, "class", "grid grid-cols-12 gap-y-4");
-    			add_location(div13, file$1, 114, 2, 3491);
+    			add_location(div13, file$1, 126, 2, 3864);
     			attr_dev(div14, "class", "mt-10");
-    			add_location(div14, file$1, 113, 0, 3469);
+    			add_location(div14, file$1, 125, 0, 3842);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -7250,8 +7250,10 @@ var app = (function () {
     	let get_value_to_send_interval;
 
     	onMount(async () => {
+    		get_global_values();
     		get_value_to_send();
     		make_new_get_value_to_send_interval(100);
+    		get_global_values();
     	});
 
     	onDestroy(() => {
@@ -7259,7 +7261,7 @@ var app = (function () {
     		console.log("destroyed get_value_to_send_interval");
     	});
 
-    	async function get_value_to_send(slider_choice) {
+    	async function get_value_to_send() {
     		const response = await fetch("https://get-data-python.vercel.app/get_value_to_send");
     		const get_value_to_send_response = await response.json();
     		set_store_value(value_to_send, $value_to_send = get_value_to_send_response.value_to_send, $value_to_send);
@@ -7276,6 +7278,13 @@ var app = (function () {
     		await response.json();
     	}
 
+    	async function get_global_values() {
+    		console.log("get_global_values", get_global_values);
+    		const response = await fetch("https://get-data-python.vercel.app/get_global_values");
+    		const get_global_values_resp = await response.json();
+    		$$invalidate(1, slider_choice = get_global_values_resp.slider_choice);
+    	}
+
     	async function make_new_get_value_to_send_interval(slider_value_front_end) {
     		console.log("make_new_get_value_to_send_interval", slider_value_front_end);
     		clearInterval(get_value_to_send_interval);
@@ -7288,8 +7297,10 @@ var app = (function () {
     		);
     	}
 
-    	let slider_value_back_end;
+    	// let slider_value_back_end;
+    	// $: slider_value_back_end = 100;
     	let slider_value_front_end;
+
     	let slider_choice;
 
     	// let value2 = 0;
@@ -7334,8 +7345,8 @@ var app = (function () {
     		Slider,
     		RadioButtonGroup,
     		send_slider_choice_to_back_end,
+    		get_global_values,
     		make_new_get_value_to_send_interval,
-    		slider_value_back_end,
     		slider_value_front_end,
     		slider_choice,
     		disabled,
@@ -7344,7 +7355,6 @@ var app = (function () {
 
     	$$self.$inject_state = $$props => {
     		if ('get_value_to_send_interval' in $$props) get_value_to_send_interval = $$props.get_value_to_send_interval;
-    		if ('slider_value_back_end' in $$props) slider_value_back_end = $$props.slider_value_back_end;
     		if ('slider_value_front_end' in $$props) $$invalidate(0, slider_value_front_end = $$props.slider_value_front_end);
     		if ('slider_choice' in $$props) $$invalidate(1, slider_choice = $$props.slider_choice);
     		if ('disabled' in $$props) $$invalidate(5, disabled = $$props.disabled);
@@ -7354,7 +7364,6 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	slider_value_back_end = 100;
     	$$invalidate(0, slider_value_front_end = 100);
     	$$invalidate(1, slider_choice = "Digits");
 

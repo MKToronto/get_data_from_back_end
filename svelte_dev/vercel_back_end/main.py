@@ -40,7 +40,7 @@ app.add_middleware(
 )
 session = {'last_choice': "", 'counter': 0, 'slider_choice': 'Digits',
 
-           'value_to_send': "0", 'slider_value': 0.1, 'started': False, 'start': 0.0, 'end': 0.0}
+           'value_to_send': "0", 'started': False, 'start': 0.0, 'end': 0.0}
 
 
 # def back_end_data_process_init():
@@ -242,6 +242,10 @@ async def get_value_to_send():
 # async def send_time_sleep_to_back_end(slider_value):
 #     session['slider_value'] = int(slider_value)/1000
 #     return "slider_value received"
+
+@app.get("/get_global_values/")
+async def get_global_values():
+    return{'slider_choice': session['slider_choice']}
 
 
 @app.get("/send_slider_choice_to_back_end/{slider_choice}")

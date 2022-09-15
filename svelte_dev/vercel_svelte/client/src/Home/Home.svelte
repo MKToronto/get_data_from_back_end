@@ -3,8 +3,10 @@
   import { value_to_send } from "./stores.js";
   let get_value_to_send_interval;
   onMount(async () => {
+    get_global_values()
     get_value_to_send();
     make_new_get_value_to_send_interval(100);
+    get_global_values()
   });
 
   onDestroy(() => {
@@ -12,7 +14,7 @@
     console.log("destroyed get_value_to_send_interval");
   });
 
-  async function get_value_to_send(slider_choice) {
+  async function get_value_to_send() {
     const response = await fetch(
       "https://get-data-python.vercel.app/get_value_to_send"
     );
@@ -34,7 +36,17 @@
       "https://get-data-python.vercel.app/send_slider_choice_to_back_end/" +
         slider_choice
     );
-    const get_value_to_send_response = await response.json();
+    const send_slider_choice_to_back_end_response = await response.json();
+  }
+
+  async function get_global_values() {
+    console.log("get_global_values", get_global_values);
+    const response = await fetch(
+      "https://get-data-python.vercel.app/get_global_values"
+    );
+    const get_global_values_resp = await response.json();
+    slider_choice = get_global_values_resp.slider_choice
+
   }
 
   async function make_new_get_value_to_send_interval(slider_value_front_end) {
@@ -45,8 +57,8 @@
     }, slider_value_front_end);
   }
 
-  let slider_value_back_end;
-  $: slider_value_back_end = 100;
+  // let slider_value_back_end;
+  // $: slider_value_back_end = 100;
 
   let slider_value_front_end;
   $: slider_value_front_end = 100;
