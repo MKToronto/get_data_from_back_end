@@ -33,7 +33,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-session = {'value_to_send': '0', 'slider_value': 0.1}
+session = {'value_to_send': '0', 'slider_value': 0}
 start = 0.0
 end =0.0
 

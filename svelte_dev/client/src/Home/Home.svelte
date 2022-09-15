@@ -40,7 +40,7 @@
   }
 
   let slider_value_back_end;
-  $: slider_value_back_end = 100
+  $: slider_value_back_end = 0
 
   let slider_value_front_end;
   $: slider_value_front_end = 100
@@ -67,7 +67,7 @@
 
 <small>Value: {slider_value_back_end}</small>
 
-<Slider min="100" max="2000" color="blue" bind:value={slider_value_back_end} {disabled} on:change={() => send_time_sleep_to_back_end(slider_value_back_end)} />
+<Slider min="0" max="2000" color="blue" bind:value={slider_value_back_end} {disabled} on:change={() => send_time_sleep_to_back_end(slider_value_back_end)} />
 
 
 
