@@ -13,7 +13,7 @@
   });
 
   async function get_value_to_send() {
-    const response = await fetch("./get_value_to_send");
+    const response = await fetch("https://ptc1ap.deta.dev/get_value_to_send");
     const get_value_to_send_response = await response.json();
     $value_to_send = get_value_to_send_response.value_to_send;
   }
@@ -23,7 +23,7 @@
 
   async function send_time_sleep_to_back_end(slider_value_back_end){
     console.log("send_time_sleep_to_back_end", slider_value_back_end)
-    const response = await fetch("./send_time_sleep_to_back_end/"+slider_value_back_end);
+    const response = await fetch("https://ptc1ap.deta.dev/send_time_sleep_to_back_end/"+slider_value_back_end);
     const get_value_to_send_response = await response.json();
 
 

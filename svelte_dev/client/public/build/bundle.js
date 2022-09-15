@@ -5439,31 +5439,31 @@ var app = (function () {
     			t18 = space();
     			create_component(slider1.$$.fragment);
     			attr_dev(p0, "class", "text-2xl");
-    			add_location(p0, file$1, 54, 6, 1555);
+    			add_location(p0, file$1, 54, 6, 1599);
     			attr_dev(div0, "class", "col-start-4 col-end-10 ");
-    			add_location(div0, file$1, 53, 4, 1510);
+    			add_location(div0, file$1, 53, 4, 1554);
     			attr_dev(p1, "class", "text-2xl");
-    			add_location(p1, file$1, 58, 6, 1695);
+    			add_location(p1, file$1, 58, 6, 1739);
     			attr_dev(div1, "class", "col-start-5 col-end-8 ");
-    			add_location(div1, file$1, 56, 4, 1645);
+    			add_location(div1, file$1, 56, 4, 1689);
     			attr_dev(p2, "class", "text-blue-400 text-2xl");
-    			add_location(p2, file$1, 61, 6, 1808);
+    			add_location(p2, file$1, 61, 6, 1852);
     			attr_dev(div2, "class", "col-start-8 col-end-9 ");
-    			add_location(div2, file$1, 60, 6, 1765);
-    			add_location(u0, file$1, 65, 46, 1963);
-    			add_location(h60, file$1, 65, 0, 1917);
-    			add_location(small0, file$1, 67, 0, 1994);
+    			add_location(div2, file$1, 60, 6, 1809);
+    			add_location(u0, file$1, 65, 46, 2007);
+    			add_location(h60, file$1, 65, 0, 1961);
+    			add_location(small0, file$1, 67, 0, 2038);
     			attr_dev(div3, "class", "col-start-4 col-end-10 ");
-    			add_location(div3, file$1, 63, 4, 1878);
-    			add_location(u1, file$1, 76, 54, 2310);
-    			add_location(h61, file$1, 76, 6, 2262);
-    			add_location(small1, file$1, 78, 6, 2353);
+    			add_location(div3, file$1, 63, 4, 1922);
+    			add_location(u1, file$1, 76, 54, 2354);
+    			add_location(h61, file$1, 76, 6, 2306);
+    			add_location(small1, file$1, 78, 6, 2397);
     			attr_dev(div4, "class", "col-start-4 col-end-10 ");
-    			add_location(div4, file$1, 74, 4, 2217);
+    			add_location(div4, file$1, 74, 4, 2261);
     			attr_dev(div5, "class", "grid grid-cols-12 gap-y-20");
-    			add_location(div5, file$1, 52, 2, 1465);
+    			add_location(div5, file$1, 52, 2, 1509);
     			attr_dev(div6, "class", "mt-20");
-    			add_location(div6, file$1, 51, 0, 1443);
+    			add_location(div6, file$1, 51, 0, 1487);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5575,14 +5575,14 @@ var app = (function () {
     	});
 
     	async function get_value_to_send() {
-    		const response = await fetch("./get_value_to_send");
+    		const response = await fetch("https://ptc1ap.deta.dev/get_value_to_send");
     		const get_value_to_send_response = await response.json();
     		set_store_value(value_to_send, $value_to_send = get_value_to_send_response.value_to_send, $value_to_send);
     	}
 
     	async function send_time_sleep_to_back_end(slider_value_back_end) {
     		console.log("send_time_sleep_to_back_end", slider_value_back_end);
-    		const response = await fetch("./send_time_sleep_to_back_end/" + slider_value_back_end);
+    		const response = await fetch("https://ptc1ap.deta.dev/send_time_sleep_to_back_end/" + slider_value_back_end);
     		await response.json();
     	}
 
@@ -6044,11 +6044,11 @@ var app = (function () {
     			t2 = space();
     			create_component(router.$$.fragment);
     			attr_dev(link0, "rel", "stylesheet");
-    			attr_dev(link0, "href", "bootstrap.min.css");
-    			add_location(link0, file, 34, 0, 625);
-    			attr_dev(link1, "href", "icon.css");
+    			attr_dev(link0, "href", "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css");
+    			add_location(link0, file, 30, 2, 507);
+    			attr_dev(link1, "href", "https://fonts.googleapis.com/icon?family=Material+Icons");
     			attr_dev(link1, "rel", "stylesheet");
-    			add_location(link1, file, 42, 2, 792);
+    			add_location(link1, file, 38, 2, 682);
     			add_location(head, file, 25, 0, 371);
     		},
     		l: function claim(nodes) {

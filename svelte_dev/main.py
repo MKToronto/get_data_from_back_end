@@ -15,7 +15,7 @@ subprocess.run("npm start", shell=True, cwd=str(here.parents[0].absolute())+"/cl
 app = FastAPI()
 print("str(here.parents[0].absolute())", str(here.parents[0].absolute()))
 # client_address = str(here.parents[0].absolute()) + "/client/public/"
-client_address = "/var/task/client/public/"
+client_address = "./svelte_dev/client/public/" 
 
 session = {'value_to_send': '0', 'slider_value': 0}
 
@@ -76,8 +76,8 @@ app.mount('', StaticFiles(directory=client_address, html=True), name="static")
 # app.mount('', StaticFiles(directory=public, html=True), name="public")
 
 if __name__ == "__main__":
-    # uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")
-    uvicorn.run(app, host="ptc1ap.deta.dev", log_level="warning")
+    uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")
+    # uvicorn.run(app, host="ptc1ap.deta.dev", log_level="warning")
 
     # uvicorn.run(app, host="127.0.0.1", port=8000)
 
