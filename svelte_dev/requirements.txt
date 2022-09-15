@@ -6,7 +6,6 @@ pylint
 paramiko
 rq
 scp
-opencv
 nodejs==16.14
 scipy
 python-dateutil==2.8.2
