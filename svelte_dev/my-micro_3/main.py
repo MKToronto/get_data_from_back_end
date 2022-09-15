@@ -4,6 +4,7 @@ import threading
 import pathlib
 import time
 import uvicorn
+import asyncio
 from fastapi import FastAPI
 # from fastapi.staticfiles import StaticFiles
 # import subprocess
@@ -48,12 +49,15 @@ class BackgroundRunner:
 
     async def run_main(self):
         while True:
+            # print("starting")
             global start
             global end
             start = time.time()
+            # print("starting1")
             time.sleep(session['slider_value'])
             session['value_to_send'] = "1"
             self.value = "1"
+            # print("starting 2")
             time.sleep(session['slider_value'])
             session['value_to_send'] = "2"
             self.value = "2"
@@ -81,7 +85,6 @@ class BackgroundRunner:
             end = time.time()
 
 runner = BackgroundRunner()
-
 # def back_end_data_process():
 
 #     while True:
@@ -126,6 +129,7 @@ async def send_time_sleep_to_back_end(slider_value):
 
 @app.get("/")
 async def read_root():
+    asyncio.create_task(runner.run_main())
     total = end - start
     return {"Hello": "World1234",
     "end-start": total,
@@ -143,7 +147,7 @@ async def read_root():
 # app.mount('', StaticFiles(directory=public, html=True), name="public")
 
 if __name__ == "__main__":
-    uvicorn.run(app, workers=4, host="127.0.0.1", port=8000, log_level="warning")
+    uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")
     # uvicorn.run(app, host="ptc1ap.deta.dev", log_level="warning")
 
     # uvicorn.run(app, host="127.0.0.1", port=8000)
