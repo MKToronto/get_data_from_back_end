@@ -13,6 +13,7 @@ sys.path.insert(0, str(here.parents[1].absolute()))
 sys.path.insert(0, str(here.parents[0].absolute()))
 # subprocess.run("npm start", shell=True, cwd=str(here.parents[0].absolute())+"/client")
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.concurrency import run_in_threadpool
 
 app = FastAPI()
 print("str(here.parents[0].absolute())", str(here.parents[0].absolute()))
@@ -43,59 +44,59 @@ end =0.0
 #     x_back_end_data_process = threading.Thread(target=back_end_data_process)
 #     x_back_end_data_process.start()
 
-class BackgroundRunner:
-    def __init__(self):
-        self.value = 0
+# class BackgroundRunner:
+#     def __init__(self):
+#         self.value = 0
 
-    async def run_main(self):
-        while True:
-            # print("starting")
-            global start
-            global end
-            start = time.time()
-            print("self.value", self.value)
-            await asyncio.sleep(float(session['slider_value']))
-            # session['value_to_send'] = "1"
-            self.value = "1"
-            print("self.value", self.value)
-            # print("starting 2")
-            await asyncio.sleep(float(session['slider_value']))
-            # session['value_to_send'] = "2"
-            self.value = "2"
-            print("self.value", self.value)
-            # print("starting 3")
-            await asyncio.sleep(float(session['slider_value']))
-            # session['value_to_send'] = "3"
-            self.value = "3"
-            print("self.value", self.value)
-            await asyncio.sleep(float(session['slider_value']))
-            # session['value_to_send'] = "4"
-            self.value = "4"
-            print("self.value", self.value)
-            await asyncio.sleep(float(session['slider_value']))
-            # session['value_to_send'] = "5"
-            self.value = "5"
-            print("self.value", self.value)
-            await asyncio.sleep(float(session['slider_value']))
-            # session['value_to_send'] = "6"
-            self.value = "6"
-            print("self.value", self.value)
-            await asyncio.sleep(float(session['slider_value']))
-            # session['value_to_send'] = "7"
-            self.value = "7"
-            print("self.value", self.value)
-            await asyncio.sleep(float(session['slider_value']))
-            # session['value_to_send'] = "8"
-            self.value = "8"
-            print("self.value", self.value)
-            await asyncio.sleep(float(session['slider_value']))
-            # session['value_to_send'] = "9"
-            self.value = "9"
-            print("self.value", self.value)
-            end = time.time()
-            # await asyncio.sleep(1)
+#     async def run_main(self):
+#         while True:
+#             # print("starting")
+#             global start
+#             global end
+#             start = time.time()
+#             print("self.value", self.value)
+#             await asyncio.sleep(float(session['slider_value']))
+#             # session['value_to_send'] = "1"
+#             self.value = "1"
+#             print("self.value", self.value)
+#             # print("starting 2")
+#             await asyncio.sleep(float(session['slider_value']))
+#             # session['value_to_send'] = "2"
+#             self.value = "2"
+#             print("self.value", self.value)
+#             # print("starting 3")
+#             await asyncio.sleep(float(session['slider_value']))
+#             # session['value_to_send'] = "3"
+#             self.value = "3"
+#             print("self.value", self.value)
+#             await asyncio.sleep(float(session['slider_value']))
+#             # session['value_to_send'] = "4"
+#             self.value = "4"
+#             print("self.value", self.value)
+#             await asyncio.sleep(float(session['slider_value']))
+#             # session['value_to_send'] = "5"
+#             self.value = "5"
+#             print("self.value", self.value)
+#             await asyncio.sleep(float(session['slider_value']))
+#             # session['value_to_send'] = "6"
+#             self.value = "6"
+#             print("self.value", self.value)
+#             await asyncio.sleep(float(session['slider_value']))
+#             # session['value_to_send'] = "7"
+#             self.value = "7"
+#             print("self.value", self.value)
+#             await asyncio.sleep(float(session['slider_value']))
+#             # session['value_to_send'] = "8"
+#             self.value = "8"
+#             print("self.value", self.value)
+#             await asyncio.sleep(float(session['slider_value']))
+#             # session['value_to_send'] = "9"
+#             self.value = "9"
+#             print("self.value", self.value)
+#             end = time.time()
+#             # await asyncio.sleep(1)
 
-runner = BackgroundRunner()
+# runner = BackgroundRunner()
 # def back_end_data_process():
 
 #     while True:
@@ -125,14 +126,64 @@ runner = BackgroundRunner()
 
 
 # back_end_data_process_init()
+
+
+async def run_main():
+    while True:
+        # print("starting")
+        global start
+        global end
+        start = time.time()
+        print("session['value_to_send']", session['value_to_send'])
+        await asyncio.sleep(float(session['slider_value']))
+        session['value_to_send'] = "1"
+        # value = "1"
+        print("session['value_to_send']", session['value_to_send'])
+        # print("starting 2")
+        await asyncio.sleep(float(session['slider_value']))
+        session['value_to_send'] = "2"
+        # value = "2"
+        print("session['value_to_send']", session['value_to_send'])
+        # print("starting 3")
+        await asyncio.sleep(float(session['slider_value']))
+        session['value_to_send'] = "3"
+        # value = "3"
+        print("session['value_to_send']", session['value_to_send'])
+        await asyncio.sleep(float(session['slider_value']))
+        session['value_to_send'] = "4"
+        # value = "4"
+        print("session['value_to_send']", session['value_to_send'])
+        await asyncio.sleep(float(session['slider_value']))
+        session['value_to_send'] = "5"
+        # value = "5"
+        print("session['value_to_send']", session['value_to_send'])
+        await asyncio.sleep(float(session['slider_value']))
+        session['value_to_send'] = "6"
+        # value = "6"
+        print("session['value_to_send']", session['value_to_send'])
+        await asyncio.sleep(float(session['slider_value']))
+        session['value_to_send'] = "7"
+        # value = "7"
+        print("session['value_to_send']", session['value_to_send'])
+        await asyncio.sleep(float(session['slider_value']))
+        session['value_to_send'] = "8"
+        # value = "8"
+        print("session['value_to_send']", session['value_to_send'])
+        await asyncio.sleep(float(session['slider_value']))
+        session['value_to_send'] = "9"
+        # value = "9"
+        print("session['value_to_send']", session['value_to_send'])
+        end = time.time()
+
 @app.on_event('startup')
 async def app_startup():
-    asyncio.create_task(runner.run_main())
+    await run_in_threadpool(lambda: run_main())
+    # asyncio.create_task(runner.run_main())
 
 @app.get("/get_value_to_send")
 async def get_value_to_send():
-    print("value_to_send", runner.value)
-    return {"value_to_send": runner.value}
+    print("value_to_send", session['value_to_send'])
+    return {"value_to_send": session['value_to_send']}
 
 
 @app.get("/send_time_sleep_to_back_end/{slider_value}")
@@ -146,7 +197,7 @@ async def read_root():
     return {"Hello": "World1234",
     "end-start": total,
     "session['slider_value']":session['slider_value'],
-    "runner.value":runner.value
+    "session['value_to_send']":session['value_to_send']
     }
 
 # @app.get("/get_value_to_send")
