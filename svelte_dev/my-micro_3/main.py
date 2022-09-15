@@ -33,7 +33,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-session = {'value_to_send': '0', 'slider_value': 100}
+session = {'value_to_send': '0', 'slider_value': 0.1}
 
 
 def back_end_data_process_init():
