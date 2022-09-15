@@ -5461,7 +5461,7 @@ var app = (function () {
     			add_location(p2, file$1, 80, 6, 2651);
     			attr_dev(div2, "class", "col-start-8 col-end-9 ");
     			add_location(div2, file$1, 79, 4, 2608);
-    			attr_dev(div3, "class", "grid grid-cols-12 gap-x-4 gap-y-16");
+    			attr_dev(div3, "class", "grid grid-cols-10 gap-x-4 gap-y-16");
     			add_location(div3, file$1, 72, 2, 2309);
     			attr_dev(div4, "class", "mt-20");
     			add_location(div4, file$1, 71, 0, 2287);
@@ -5495,7 +5495,7 @@ var app = (function () {
     			add_location(label2, file$1, 113, 6, 3542);
     			attr_dev(div8, "class", "col-start-6 col-end-7 text-center");
     			add_location(div8, file$1, 112, 4, 3488);
-    			attr_dev(div9, "class", "grid grid-cols-12 gap-4");
+    			attr_dev(div9, "class", "grid grid-cols-10 gap-4");
     			add_location(div9, file$1, 85, 2, 2755);
     			attr_dev(div10, "class", "mt-10");
     			add_location(div10, file$1, 84, 0, 2733);
@@ -5505,7 +5505,7 @@ var app = (function () {
     			add_location(small, file$1, 131, 6, 4029);
     			attr_dev(div12, "class", "col-start-4 col-end-10 ");
     			add_location(div12, file$1, 130, 4, 3985);
-    			attr_dev(div13, "class", "grid grid-cols-12 gap-y-4");
+    			attr_dev(div13, "class", "grid grid-cols-10 gap-y-4");
     			add_location(div13, file$1, 126, 2, 3833);
     			attr_dev(div14, "class", "mt-10 mb-20");
     			add_location(div14, file$1, 125, 0, 3805);
