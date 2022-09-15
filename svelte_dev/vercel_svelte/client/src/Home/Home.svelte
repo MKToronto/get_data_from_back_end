@@ -74,7 +74,7 @@
     </div>
     <div class="col-start-4 col-end-10 ">
 
-<h6>Choose Charecter:</h6>
+<h6>Choose a character type:</h6>
 </div>
 
 <div class="col-start-4 col-end-5 text-center">
