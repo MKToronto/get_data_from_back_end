@@ -4,7 +4,7 @@
   let get_value_to_send_interval;
   onMount(async () => {
     get_value_to_send();
-    make_new_get_value_to_send_interval(500)
+    make_new_get_value_to_send_interval(100)
   });
 
   onDestroy(() => {
@@ -40,10 +40,10 @@
   }
 
   let slider_value_back_end;
-  $: slider_value_back_end = 500
+  $: slider_value_back_end = 100
 
   let slider_value_front_end;
-  $: slider_value_front_end = 500
+  $: slider_value_front_end = 100
   // let value2 = 0;
   let disabled = false;
 
@@ -67,7 +67,7 @@
 
 <small>Value: {slider_value_back_end}</small>
 
-<Slider min="500" max="3000" color="blue" bind:value={slider_value_back_end} {disabled} on:change={() => send_time_sleep_to_back_end(slider_value_back_end)} />
+<Slider min="100" max="2000" color="blue" bind:value={slider_value_back_end} {disabled} on:change={() => send_time_sleep_to_back_end(slider_value_back_end)} />
 
 
 
@@ -78,7 +78,7 @@
       
       <small>Value: {slider_value_front_end}</small>
       
-      <Slider min="500" max="3000" color="blue" bind:value={slider_value_front_end} {disabled} on:change={() => make_new_get_value_to_send_interval(slider_value_front_end)} />
+      <Slider min="100" max="2000" color="blue" bind:value={slider_value_front_end} {disabled} on:change={() => make_new_get_value_to_send_interval(slider_value_front_end)} />
       
       
       
