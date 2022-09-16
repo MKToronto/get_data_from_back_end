@@ -82,7 +82,7 @@
   </div>
 </div>
 <div class="mt-10">
-  <div class="grid grid-cols-12 gap-1 gap-x-2">
+  <div class="grid grid-cols-12 gap-y-2 gap-x-6">
     <div class="col-start-2 col-end-12 text-center mb-2 ">
       <h6>Choose a character type:</h6>
     </div>
