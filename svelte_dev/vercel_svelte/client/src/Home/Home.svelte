@@ -132,7 +132,7 @@
       <h6>Number of Milliseconds Between Updates:</h6>
     </div>
     <div class="col-start-2 col-end-12 text-center">
-      <small>Value: {slider_value_front_end}</small>
+      <small> {slider_value_front_end} ms</small>
     </div>
     <div class=" flex justify-center ">
       <!-- <div class="col-span-6 "> -->

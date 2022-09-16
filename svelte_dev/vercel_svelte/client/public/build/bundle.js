@@ -5450,8 +5450,8 @@ var app = (function () {
     			t18 = space();
     			div14 = element("div");
     			small = element("small");
-    			t19 = text("Value: ");
-    			t20 = text(/*slider_value_front_end*/ ctx[0]);
+    			t19 = text(/*slider_value_front_end*/ ctx[0]);
+    			t20 = text(" ms");
     			t21 = space();
     			div15 = element("div");
     			create_component(slider.$$.fragment);
@@ -5516,7 +5516,7 @@ var app = (function () {
     			attr_dev(div14, "class", "col-start-2 col-end-12 text-center");
     			add_location(div14, file$1, 133, 4, 4321);
     			attr_dev(div15, "class", "flex justify-center ");
-    			add_location(div15, file$1, 136, 4, 4438);
+    			add_location(div15, file$1, 136, 4, 4435);
     			attr_dev(div16, "class", "grid grid-cols-12 gap-y-2");
     			add_location(div16, file$1, 129, 2, 4158);
     			attr_dev(div17, "class", "mt-10 mb-20");
@@ -5636,7 +5636,7 @@ var app = (function () {
     				input2.checked = input2.__value === /*slider_choice*/ ctx[1];
     			}
 
-    			if (!current || dirty & /*slider_value_front_end*/ 1) set_data_dev(t20, /*slider_value_front_end*/ ctx[0]);
+    			if (!current || dirty & /*slider_value_front_end*/ 1) set_data_dev(t19, /*slider_value_front_end*/ ctx[0]);
     			const slider_changes = {};
 
     			if (!updating_value && dirty & /*slider_value_front_end*/ 1) {
