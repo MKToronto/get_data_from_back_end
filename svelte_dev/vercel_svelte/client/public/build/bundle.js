@@ -5501,7 +5501,7 @@ var app = (function () {
     			add_location(label2, file$1, 114, 10, 3807);
     			attr_dev(div8, "class", "text-center");
     			add_location(div8, file$1, 113, 8, 3771);
-    			attr_dev(div9, "class", "flex justify-center space-x-4");
+    			attr_dev(div9, "class", "flex justify-center space-x-8");
     			add_location(div9, file$1, 89, 6, 3015);
     			attr_dev(div10, "class", "col-start-1 col-end-13 text-center mb-2 ");
     			add_location(div10, file$1, 88, 4, 2954);
