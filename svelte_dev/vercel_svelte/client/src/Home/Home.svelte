@@ -75,7 +75,7 @@
       <p class="text-2xl">Welcome to a really great FastAPI and Svelte demo!</p>
     </div>
     <div class="col-start-2 col-span-12 text-center">
-      <p class="text-2xl">Value Received From FastAPI:</p><p class="text-blue-400 text-2xl">{$value_to_send}</p>
+      <p class="text-2xl">Value Received From FastAPI:</p><p class="text-blue-400 text-2xl mx-4">{$value_to_send}</p>
     </div>
     <!-- <div class="col-span-1 col-end-13 text-left">
       <p class="text-blue-400 text-2xl">{$value_to_send}</p>
