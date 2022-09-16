@@ -73,7 +73,7 @@
     <div class="col-start-2 col-end-12 text-center ">
       <p class="text-2xl">Welcome to a really great FastAPI and Svelte demo!</p>
     </div>
-    <div class="col-start-2 col-span-12 text-center">
+    <div class="col-start-2 col-end-12 text-center">
       <p class="text-2xl">Value Received From FastAPI:</p>
     </div>
     <div class="col-span-2 col-end-12 text-left">
@@ -83,7 +83,7 @@
 </div>
 <div class="mt-10">
   <div class="grid grid-cols-12 gap-1">
-    <div class="col-start-2 col-span-12 text-center mb-2 ">
+    <div class="col-start-2 col-end-12 text-center mb-2 ">
       <h6>Choose a character type:</h6>
     </div>
     <div>
@@ -123,11 +123,11 @@
   </div>
 </div>
 <div class="mt-10 mb-20">
-  <div class="grid grid-cols-12 gap-y-4">
-    <div class="col-start-2 col-span-12 text-center">
+  <div class="grid grid-cols-12 gap-y-2">
+    <div class="col-start-2 col-end-12 text-center">
       <h6>Number of Milliseconds Between Updates:</h6>
     </div>
-    <div class="col-start-2 col-span-12 text-center">
+    <div class="col-start-2 col-end-12 text-center">
       <small>Value: {slider_value_front_end}</small>
     </div>
     <div class="col-start-4 col-span-7 ">
