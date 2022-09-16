@@ -134,7 +134,8 @@
     <div class="col-start-2 col-end-12 text-center">
       <small>Value: {slider_value_front_end}</small>
     </div>
-    <div class="col-start-5 col-span-4 ">
+    <div class=" flex justify-center ">
+    <div class="col-span-6 ">
       <Slider
         min="100"
         max="2000"
@@ -145,5 +146,6 @@
           make_new_get_value_to_send_interval(slider_value_front_end)}
       />
     </div>
+  </div>
   </div>
 </div>
