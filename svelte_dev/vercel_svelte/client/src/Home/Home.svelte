@@ -86,39 +86,43 @@
     <div class="col-start-2 col-end-12 text-center mb-2 ">
       <h6>Choose a character type:</h6>
     </div>
-    <div class="col-start-4 text-center">
-      <!-- <div class="col-start-2 col-span-3 text-right"> -->
-      <label>
-        <input
-          bind:group={slider_choice}
-          on:change={send_slider_choice_to_back_end(slider_choice)}
-          type="radio"
-          value="Digits"
-        />
-        <h6>Digits</h6>
-      </label>
-    </div>
-    <div class="text-center">
-      <label>
-        <input
-          bind:group={slider_choice}
-          on:change={send_slider_choice_to_back_end(slider_choice)}
-          type="radio"
-          value="Letters"
-        />
-        <h6>Letters</h6>
-      </label>
-    </div>
-    <div class="text-center">
-      <label>
-        <input
-          bind:group={slider_choice}
-          on:change={send_slider_choice_to_back_end(slider_choice)}
-          type="radio"
-          value="Punctuation"
-        />
-        <h6>Punctuation</h6>
-      </label>
+    <div class="col-start-2 col-end-12 text-center mb-2 ">
+      <div class=" flex justify-center ">
+        <div class="text-center">
+          <!-- <div class="col-start-2 col-span-3 text-right"> -->
+          <label>
+            <input
+              bind:group={slider_choice}
+              on:change={send_slider_choice_to_back_end(slider_choice)}
+              type="radio"
+              value="Digits"
+            />
+            <h6>Digits</h6>
+          </label>
+        </div>
+        <div class="text-center">
+          <label>
+            <input
+              bind:group={slider_choice}
+              on:change={send_slider_choice_to_back_end(slider_choice)}
+              type="radio"
+              value="Letters"
+            />
+            <h6>Letters</h6>
+          </label>
+        </div>
+        <div class="text-center">
+          <label>
+            <input
+              bind:group={slider_choice}
+              on:change={send_slider_choice_to_back_end(slider_choice)}
+              type="radio"
+              value="Punctuation"
+            />
+            <h6>Punctuation</h6>
+          </label>
+        </div>
+      </div>
     </div>
   </div>
 </div>
