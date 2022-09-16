@@ -136,7 +136,7 @@
     <div class="col-start-2 col-end-12 text-center">
       <small> {slider_value_front_end} ms</small>
     </div>
-    <div class="col-start-4 col-end-10 flex justify-center ">
+    <div class="col-start-4 col-end-10 flex justify-center mt-2">
       <!-- <div class="col-span-6 "> -->
       <Slider
         min="100"

@@ -5519,7 +5519,7 @@ var app = (function () {
     			add_location(small, file$1, 136, 6, 4441);
     			attr_dev(div15, "class", "col-start-2 col-end-12 text-center");
     			add_location(div15, file$1, 135, 4, 4386);
-    			attr_dev(div16, "class", "col-start-4 col-end-10 flex justify-center ");
+    			attr_dev(div16, "class", "col-start-4 col-end-10 flex justify-center mt-2");
     			add_location(div16, file$1, 138, 4, 4500);
     			attr_dev(div17, "class", "grid grid-cols-12 gap-y-2");
     			add_location(div17, file$1, 131, 2, 4223);
