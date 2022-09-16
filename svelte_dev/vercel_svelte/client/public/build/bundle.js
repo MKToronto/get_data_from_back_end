@@ -5361,8 +5361,8 @@ var app = (function () {
     	let t14;
     	let h63;
     	let t16;
-    	let div18;
     	let div17;
+    	let div16;
     	let div13;
     	let h64;
     	let t18;
@@ -5371,7 +5371,6 @@ var app = (function () {
     	let t19;
     	let t20;
     	let t21;
-    	let div16;
     	let div15;
     	let slider;
     	let updating_value;
@@ -5443,8 +5442,8 @@ var app = (function () {
     			h63 = element("h6");
     			h63.textContent = "Punctuation";
     			t16 = space();
-    			div18 = element("div");
     			div17 = element("div");
+    			div16 = element("div");
     			div13 = element("div");
     			h64 = element("h6");
     			h64.textContent = "Number of Milliseconds Between Updates:";
@@ -5454,7 +5453,6 @@ var app = (function () {
     			t19 = text("Value: ");
     			t20 = text(/*slider_value_front_end*/ ctx[0]);
     			t21 = space();
-    			div16 = element("div");
     			div15 = element("div");
     			create_component(slider.$$.fragment);
     			attr_dev(p0, "class", "text-2xl");
@@ -5517,14 +5515,12 @@ var app = (function () {
     			add_location(small, file$1, 134, 6, 4376);
     			attr_dev(div14, "class", "col-start-2 col-end-12 text-center");
     			add_location(div14, file$1, 133, 4, 4321);
-    			attr_dev(div15, "class", "col-span-6 ");
-    			add_location(div15, file$1, 137, 4, 4478);
-    			attr_dev(div16, "class", "flex justify-center ");
-    			add_location(div16, file$1, 136, 4, 4438);
-    			attr_dev(div17, "class", "grid grid-cols-12 gap-y-2");
-    			add_location(div17, file$1, 129, 2, 4158);
-    			attr_dev(div18, "class", "mt-10 mb-20");
-    			add_location(div18, file$1, 128, 0, 4130);
+    			attr_dev(div15, "class", "flex justify-center ");
+    			add_location(div15, file$1, 136, 4, 4438);
+    			attr_dev(div16, "class", "grid grid-cols-12 gap-y-2");
+    			add_location(div16, file$1, 129, 2, 4158);
+    			attr_dev(div17, "class", "mt-10 mb-20");
+    			add_location(div17, file$1, 128, 0, 4130);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5570,17 +5566,16 @@ var app = (function () {
     			append_dev(label2, t14);
     			append_dev(label2, h63);
     			insert_dev(target, t16, anchor);
-    			insert_dev(target, div18, anchor);
-    			append_dev(div18, div17);
-    			append_dev(div17, div13);
+    			insert_dev(target, div17, anchor);
+    			append_dev(div17, div16);
+    			append_dev(div16, div13);
     			append_dev(div13, h64);
-    			append_dev(div17, t18);
-    			append_dev(div17, div14);
+    			append_dev(div16, t18);
+    			append_dev(div16, div14);
     			append_dev(div14, small);
     			append_dev(small, t19);
     			append_dev(small, t20);
-    			append_dev(div17, t21);
-    			append_dev(div17, div16);
+    			append_dev(div16, t21);
     			append_dev(div16, div15);
     			mount_component(slider, div15, null);
     			current = true;
@@ -5669,7 +5664,7 @@ var app = (function () {
     			/*$$binding_groups*/ ctx[7][0].splice(/*$$binding_groups*/ ctx[7][0].indexOf(input1), 1);
     			/*$$binding_groups*/ ctx[7][0].splice(/*$$binding_groups*/ ctx[7][0].indexOf(input2), 1);
     			if (detaching) detach_dev(t16);
-    			if (detaching) detach_dev(div18);
+    			if (detaching) detach_dev(div17);
     			destroy_component(slider);
     			mounted = false;
     			run_all(dispose);

@@ -135,17 +135,17 @@
       <small>Value: {slider_value_front_end}</small>
     </div>
     <div class=" flex justify-center ">
-    <div class="col-span-6 ">
-      <Slider
-        min="100"
-        max="2000"
-        color="blue"
-        bind:value={slider_value_front_end}
-        {disabled}
-        on:change={() =>
-          make_new_get_value_to_send_interval(slider_value_front_end)}
-      />
+      <!-- <div class="col-span-6 "> -->
+        <Slider
+          min="100"
+          max="2000"
+          color="blue"
+          bind:value={slider_value_front_end}
+          {disabled}
+          on:change={() =>
+            make_new_get_value_to_send_interval(slider_value_front_end)}
+        />
+      <!-- </div> -->
     </div>
-  </div>
   </div>
 </div>
