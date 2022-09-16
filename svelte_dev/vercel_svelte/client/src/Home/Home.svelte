@@ -69,7 +69,7 @@
 </script>
 
 <div class="mt-20">
-  <div class="grid grid-cols-12 gap-x-2 gap-y-16">
+  <div class="grid grid-cols-12 gap-x-2 gap-y-16 mb-16">
     <div class="col-start-2 col-end-12 text-center ">
       <p class="text-2xl">Welcome to a really great FastAPI and Svelte demo!</p>
     </div>
