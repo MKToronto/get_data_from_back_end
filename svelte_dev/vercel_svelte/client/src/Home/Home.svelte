@@ -76,7 +76,7 @@
     <div class="col-start-2 col-end-12 text-center">
       <p class="text-2xl">Value Received From FastAPI:</p>
     </div>
-    <div class="col-span-2 col-end-12 text-center">
+    <div class="col-start-2 col-end-12 text-center">
       <p class="text-blue-400 text-2xl">{$value_to_send}</p>
     </div>
   </div>
