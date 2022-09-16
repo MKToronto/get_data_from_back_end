@@ -5515,7 +5515,7 @@ var app = (function () {
     			add_location(small, file$1, 134, 6, 4354);
     			attr_dev(div14, "class", "col-start-2 col-end-12 text-center");
     			add_location(div14, file$1, 133, 4, 4299);
-    			attr_dev(div15, "class", "col-start-4 col-span-6 ");
+    			attr_dev(div15, "class", "col-start-5 col-span-5 ");
     			add_location(div15, file$1, 136, 4, 4416);
     			attr_dev(div16, "class", "grid grid-cols-12 gap-y-2");
     			add_location(div16, file$1, 129, 2, 4136);

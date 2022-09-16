@@ -134,7 +134,7 @@
     <div class="col-start-2 col-end-12 text-center">
       <small>Value: {slider_value_front_end}</small>
     </div>
-    <div class="col-start-4 col-span-6 ">
+    <div class="col-start-5 col-span-5 ">
       <Slider
         min="100"
         max="2000"
