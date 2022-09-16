@@ -73,6 +73,8 @@
     <div class="col-start-2 col-end-12 text-center ">
       <p class="text-2xl">Welcome to a really great FastAPI and Svelte demo!</p>
     </div>
+  </div>
+  <div class="grid grid-cols-12 gap-x-2 gap-y-8">
     <div class="col-start-2 col-end-12 text-center">
       <p class="text-2xl">Value Received From FastAPI:</p>
     </div>
@@ -136,15 +138,15 @@
     </div>
     <div class=" flex justify-center ">
       <!-- <div class="col-span-6 "> -->
-        <Slider
-          min="100"
-          max="2000"
-          color="blue"
-          bind:value={slider_value_front_end}
-          {disabled}
-          on:change={() =>
-            make_new_get_value_to_send_interval(slider_value_front_end)}
-        />
+      <Slider
+        min="100"
+        max="2000"
+        color="blue"
+        bind:value={slider_value_front_end}
+        {disabled}
+        on:change={() =>
+          make_new_get_value_to_send_interval(slider_value_front_end)}
+      />
       <!-- </div> -->
     </div>
   </div>
