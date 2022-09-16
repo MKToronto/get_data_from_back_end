@@ -86,8 +86,8 @@
     <div class="col-start-2 col-end-12 text-center mb-2 ">
       <h6>Choose a character type:</h6>
     </div>
-    <div class="col-start-2 col-end-12 text-center mb-2 ">
-      <div class=" flex justify-around ">
+    <div class="col-start-1 col-end-13 text-center mb-2 ">
+      <div class=" flex justify-center ">
         <div class="text-center">
           <!-- <div class="col-start-2 col-span-3 text-right"> -->
           <label>
