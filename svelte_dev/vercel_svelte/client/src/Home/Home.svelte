@@ -86,7 +86,7 @@
     <div class="col-start-2 col-end-12 text-center mb-2 ">
       <h6>Choose a character type:</h6>
     </div>
-    <div>
+    <div class="col-start-4 text-center">
       <!-- <div class="col-start-2 col-span-3 text-right"> -->
       <label>
         <input
@@ -98,7 +98,7 @@
         <h6>Digits</h6>
       </label>
     </div>
-    <div>
+    <div class="text-center">
       <label>
         <input
           bind:group={slider_choice}
@@ -109,7 +109,7 @@
         <h6>Letters</h6>
       </label>
     </div>
-    <div>
+    <div class="text-center">
       <label>
         <input
           bind:group={slider_choice}
@@ -130,7 +130,7 @@
     <div class="col-start-2 col-end-12 text-center">
       <small>Value: {slider_value_front_end}</small>
     </div>
-    <div class="col-start-4 col-span-7 ">
+    <div class="col-start-4 col-span-6 ">
       <Slider
         min="100"
         max="2000"
