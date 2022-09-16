@@ -5449,13 +5449,13 @@ var app = (function () {
     			create_component(slider.$$.fragment);
     			attr_dev(p0, "class", "text-2xl");
     			add_location(p0, file$1, 74, 6, 2418);
-    			attr_dev(div0, "class", "col-start-2 col-end-12 text-center ");
+    			attr_dev(div0, "class", "col-start-2 col-end-11 text-center ");
     			add_location(div0, file$1, 73, 4, 2362);
     			attr_dev(p1, "class", "text-2xl");
     			add_location(p1, file$1, 77, 6, 2564);
     			attr_dev(p2, "class", "text-blue-400 text-2xl mx-4");
     			add_location(p2, file$1, 77, 58, 2616);
-    			attr_dev(div1, "class", "col-start-2 col-span-12 text-center");
+    			attr_dev(div1, "class", "col-start-2 col-span-11 text-center");
     			add_location(div1, file$1, 76, 4, 2508);
     			attr_dev(div2, "class", "grid grid-cols-12 gap-x-2 gap-y-16");
     			add_location(div2, file$1, 72, 2, 2309);

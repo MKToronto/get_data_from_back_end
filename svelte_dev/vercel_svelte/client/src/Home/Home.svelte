@@ -71,10 +71,10 @@
 
 <div class="mt-20">
   <div class="grid grid-cols-12 gap-x-2 gap-y-16">
-    <div class="col-start-2 col-end-12 text-center ">
+    <div class="col-start-2 col-end-11 text-center ">
       <p class="text-2xl">Welcome to a really great FastAPI and Svelte demo!</p>
     </div>
-    <div class="col-start-2 col-span-12 text-center">
+    <div class="col-start-2 col-span-11 text-center">
       <p class="text-2xl">Value Received From FastAPI:</p><p class="text-blue-400 text-2xl mx-4">{$value_to_send}</p>
     </div>
     <!-- <div class="col-span-1 col-end-13 text-left">
