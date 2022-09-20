@@ -5324,224 +5324,355 @@ var app = (function () {
     const file$1 = "src/Home/Home.svelte";
 
     function create_fragment$1(ctx) {
-    	let div6;
     	let div5;
+    	let div1;
     	let div0;
     	let p0;
     	let t1;
-    	let div1;
+    	let div4;
+    	let div2;
     	let p1;
     	let t3;
-    	let div2;
+    	let div3;
     	let p2;
     	let t4;
     	let t5;
-    	let div3;
+    	let div13;
+    	let div12;
+    	let div6;
     	let h60;
-    	let t6;
-    	let u0;
+    	let t7;
+    	let div11;
+    	let div10;
+    	let div7;
+    	let label0;
+    	let input0;
     	let t8;
-    	let small0;
-    	let t9;
-    	let t10;
-    	let t11;
-    	let slider0;
-    	let updating_value;
-    	let t12;
-    	let div4;
     	let h61;
+    	let t10;
+    	let div8;
+    	let label1;
+    	let input1;
+    	let t11;
+    	let h62;
     	let t13;
-    	let u1;
-    	let t15;
-    	let small1;
+    	let div9;
+    	let label2;
+    	let input2;
+    	let t14;
+    	let h63;
     	let t16;
-    	let t17;
+    	let div18;
+    	let div17;
+    	let div14;
+    	let h64;
     	let t18;
-    	let slider1;
-    	let updating_value_1;
+    	let div15;
+    	let small;
+    	let t19;
+    	let t20;
+    	let t21;
+    	let div16;
+    	let slider;
+    	let updating_value;
     	let current;
+    	let mounted;
+    	let dispose;
 
-    	function slider0_value_binding(value) {
-    		/*slider0_value_binding*/ ctx[6](value);
+    	function slider_value_binding(value) {
+    		/*slider_value_binding*/ ctx[10](value);
     	}
 
-    	let slider0_props = {
-    		min: "0",
-    		max: "2000",
-    		color: "blue",
-    		disabled: /*disabled*/ ctx[5]
-    	};
-
-    	if (/*slider_value_back_end*/ ctx[0] !== void 0) {
-    		slider0_props.value = /*slider_value_back_end*/ ctx[0];
-    	}
-
-    	slider0 = new Slider({ props: slider0_props, $$inline: true });
-    	binding_callbacks.push(() => bind(slider0, 'value', slider0_value_binding));
-    	slider0.$on("change", /*change_handler*/ ctx[7]);
-
-    	function slider1_value_binding(value) {
-    		/*slider1_value_binding*/ ctx[8](value);
-    	}
-
-    	let slider1_props = {
+    	let slider_props = {
     		min: "100",
     		max: "2000",
     		color: "blue",
     		disabled: /*disabled*/ ctx[5]
     	};
 
-    	if (/*slider_value_front_end*/ ctx[1] !== void 0) {
-    		slider1_props.value = /*slider_value_front_end*/ ctx[1];
+    	if (/*slider_value_front_end*/ ctx[0] !== void 0) {
+    		slider_props.value = /*slider_value_front_end*/ ctx[0];
     	}
 
-    	slider1 = new Slider({ props: slider1_props, $$inline: true });
-    	binding_callbacks.push(() => bind(slider1, 'value', slider1_value_binding));
-    	slider1.$on("change", /*change_handler_1*/ ctx[9]);
+    	slider = new Slider({ props: slider_props, $$inline: true });
+    	binding_callbacks.push(() => bind(slider, 'value', slider_value_binding));
+    	slider.$on("change", /*change_handler*/ ctx[11]);
 
     	const block = {
     		c: function create() {
-    			div6 = element("div");
     			div5 = element("div");
+    			div1 = element("div");
     			div0 = element("div");
     			p0 = element("p");
     			p0.textContent = "Welcome to a really great FastAPI and Svelte demo!";
     			t1 = space();
-    			div1 = element("div");
+    			div4 = element("div");
+    			div2 = element("div");
     			p1 = element("p");
     			p1.textContent = "Value Received From FastAPI:";
     			t3 = space();
-    			div2 = element("div");
+    			div3 = element("div");
     			p2 = element("p");
     			t4 = text(/*$value_to_send*/ ctx[2]);
     			t5 = space();
-    			div3 = element("div");
+    			div13 = element("div");
+    			div12 = element("div");
+    			div6 = element("div");
     			h60 = element("h6");
-    			t6 = text("Number of Milliseconds Between Updates On ");
-    			u0 = element("u");
-    			u0.textContent = "FastAPI Backend";
+    			h60.textContent = "Choose a character type:";
+    			t7 = space();
+    			div11 = element("div");
+    			div10 = element("div");
+    			div7 = element("div");
+    			label0 = element("label");
+    			input0 = element("input");
     			t8 = space();
-    			small0 = element("small");
-    			t9 = text("Value: ");
-    			t10 = text(/*slider_value_back_end*/ ctx[0]);
-    			t11 = space();
-    			create_component(slider0.$$.fragment);
-    			t12 = space();
-    			div4 = element("div");
     			h61 = element("h6");
-    			t13 = text("Number of Milliseconds Between Updates From ");
-    			u1 = element("u");
-    			u1.textContent = "Svelte Front End";
-    			t15 = space();
-    			small1 = element("small");
-    			t16 = text("Value: ");
-    			t17 = text(/*slider_value_front_end*/ ctx[1]);
+    			h61.textContent = "Digits";
+    			t10 = space();
+    			div8 = element("div");
+    			label1 = element("label");
+    			input1 = element("input");
+    			t11 = space();
+    			h62 = element("h6");
+    			h62.textContent = "Letters";
+    			t13 = space();
+    			div9 = element("div");
+    			label2 = element("label");
+    			input2 = element("input");
+    			t14 = space();
+    			h63 = element("h6");
+    			h63.textContent = "Punctuation";
+    			t16 = space();
+    			div18 = element("div");
+    			div17 = element("div");
+    			div14 = element("div");
+    			h64 = element("h6");
+    			h64.textContent = "Number of Milliseconds Between Updates:";
     			t18 = space();
-    			create_component(slider1.$$.fragment);
+    			div15 = element("div");
+    			small = element("small");
+    			t19 = text(/*slider_value_front_end*/ ctx[0]);
+    			t20 = text(" ms");
+    			t21 = space();
+    			div16 = element("div");
+    			create_component(slider.$$.fragment);
     			attr_dev(p0, "class", "text-2xl");
-    			add_location(p0, file$1, 54, 6, 1624);
-    			attr_dev(div0, "class", "col-start-4 col-end-10 ");
-    			add_location(div0, file$1, 53, 4, 1579);
+    			add_location(p0, file$1, 73, 6, 2426);
+    			attr_dev(div0, "class", "col-start-2 col-end-12 text-center ");
+    			add_location(div0, file$1, 72, 4, 2370);
+    			attr_dev(div1, "class", "grid grid-cols-12 gap-x-2 gap-y-16 mb-16");
+    			add_location(div1, file$1, 71, 2, 2311);
     			attr_dev(p1, "class", "text-2xl");
-    			add_location(p1, file$1, 58, 6, 1764);
-    			attr_dev(div1, "class", "col-start-5 col-end-8 ");
-    			add_location(div1, file$1, 56, 4, 1714);
+    			add_location(p1, file$1, 78, 6, 2630);
+    			attr_dev(div2, "class", "col-start-2 col-end-12 text-center");
+    			add_location(div2, file$1, 77, 4, 2575);
     			attr_dev(p2, "class", "text-blue-400 text-2xl");
-    			add_location(p2, file$1, 61, 6, 1877);
-    			attr_dev(div2, "class", "col-start-8 col-end-9 ");
-    			add_location(div2, file$1, 60, 6, 1834);
-    			add_location(u0, file$1, 65, 46, 2032);
-    			add_location(h60, file$1, 65, 0, 1986);
-    			add_location(small0, file$1, 67, 0, 2063);
-    			attr_dev(div3, "class", "col-start-4 col-end-10 ");
-    			add_location(div3, file$1, 63, 4, 1947);
-    			add_location(u1, file$1, 76, 54, 2379);
-    			add_location(h61, file$1, 76, 6, 2331);
-    			add_location(small1, file$1, 78, 6, 2422);
-    			attr_dev(div4, "class", "col-start-4 col-end-10 ");
-    			add_location(div4, file$1, 74, 4, 2286);
-    			attr_dev(div5, "class", "grid grid-cols-12 gap-y-20");
-    			add_location(div5, file$1, 52, 2, 1534);
-    			attr_dev(div6, "class", "mt-20");
-    			add_location(div6, file$1, 51, 0, 1512);
+    			add_location(p2, file$1, 81, 6, 2753);
+    			attr_dev(div3, "class", "col-start-2 col-end-12 text-center");
+    			add_location(div3, file$1, 80, 4, 2698);
+    			attr_dev(div4, "class", "grid grid-cols-12 gap-x-2 gap-y-8");
+    			add_location(div4, file$1, 76, 2, 2523);
+    			attr_dev(div5, "class", "mt-20");
+    			add_location(div5, file$1, 70, 0, 2289);
+    			add_location(h60, file$1, 88, 6, 2970);
+    			attr_dev(div6, "class", "col-start-2 col-end-12 text-center mb-2 ");
+    			add_location(div6, file$1, 87, 4, 2909);
+    			attr_dev(input0, "type", "radio");
+    			input0.__value = "Digits";
+    			input0.value = input0.__value;
+    			/*$$binding_groups*/ ctx[7][0].push(input0);
+    			add_location(input0, file$1, 95, 12, 3257);
+    			add_location(h61, file$1, 101, 12, 3460);
+    			add_location(label0, file$1, 94, 10, 3237);
+    			attr_dev(div7, "class", "text-center");
+    			add_location(div7, file$1, 92, 8, 3134);
+    			attr_dev(input1, "type", "radio");
+    			input1.__value = "Letters";
+    			input1.value = input1.__value;
+    			/*$$binding_groups*/ ctx[7][0].push(input1);
+    			add_location(input1, file$1, 106, 12, 3574);
+    			add_location(h62, file$1, 112, 12, 3778);
+    			add_location(label1, file$1, 105, 10, 3554);
+    			attr_dev(div8, "class", "text-center");
+    			add_location(div8, file$1, 104, 8, 3518);
+    			attr_dev(input2, "type", "radio");
+    			input2.__value = "Punctuation";
+    			input2.value = input2.__value;
+    			/*$$binding_groups*/ ctx[7][0].push(input2);
+    			add_location(input2, file$1, 117, 12, 3893);
+    			add_location(h63, file$1, 123, 12, 4101);
+    			add_location(label2, file$1, 116, 10, 3873);
+    			attr_dev(div9, "class", "text-center");
+    			add_location(div9, file$1, 115, 8, 3837);
+    			attr_dev(div10, "class", "flex justify-center space-x-12");
+    			add_location(div10, file$1, 91, 6, 3080);
+    			attr_dev(div11, "class", "col-start-1 col-end-13 text-center mb-2 ");
+    			add_location(div11, file$1, 90, 4, 3019);
+    			attr_dev(div12, "class", "grid grid-cols-12 gap-y-2 gap-x-6");
+    			add_location(div12, file$1, 86, 2, 2857);
+    			attr_dev(div13, "class", "mt-10");
+    			add_location(div13, file$1, 85, 0, 2835);
+    			add_location(h64, file$1, 133, 6, 4323);
+    			attr_dev(div14, "class", "col-start-2 col-end-12 text-center");
+    			add_location(div14, file$1, 132, 4, 4268);
+    			add_location(small, file$1, 136, 6, 4442);
+    			attr_dev(div15, "class", "col-start-2 col-end-12 text-center");
+    			add_location(div15, file$1, 135, 4, 4387);
+    			attr_dev(div16, "class", "col-start-4 col-end-10 flex justify-center mt-2");
+    			add_location(div16, file$1, 138, 4, 4501);
+    			attr_dev(div17, "class", "grid grid-cols-12 gap-y-2");
+    			add_location(div17, file$1, 131, 2, 4224);
+    			attr_dev(div18, "class", "mt-10 mb-20");
+    			add_location(div18, file$1, 130, 0, 4196);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div6, anchor);
-    			append_dev(div6, div5);
-    			append_dev(div5, div0);
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, div1);
+    			append_dev(div1, div0);
     			append_dev(div0, p0);
     			append_dev(div5, t1);
-    			append_dev(div5, div1);
-    			append_dev(div1, p1);
-    			append_dev(div5, t3);
-    			append_dev(div5, div2);
-    			append_dev(div2, p2);
-    			append_dev(p2, t4);
-    			append_dev(div5, t5);
-    			append_dev(div5, div3);
-    			append_dev(div3, h60);
-    			append_dev(h60, t6);
-    			append_dev(h60, u0);
-    			append_dev(div3, t8);
-    			append_dev(div3, small0);
-    			append_dev(small0, t9);
-    			append_dev(small0, t10);
-    			append_dev(div3, t11);
-    			mount_component(slider0, div3, null);
-    			append_dev(div5, t12);
     			append_dev(div5, div4);
-    			append_dev(div4, h61);
-    			append_dev(h61, t13);
-    			append_dev(h61, u1);
-    			append_dev(div4, t15);
-    			append_dev(div4, small1);
-    			append_dev(small1, t16);
-    			append_dev(small1, t17);
-    			append_dev(div4, t18);
-    			mount_component(slider1, div4, null);
+    			append_dev(div4, div2);
+    			append_dev(div2, p1);
+    			append_dev(div4, t3);
+    			append_dev(div4, div3);
+    			append_dev(div3, p2);
+    			append_dev(p2, t4);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div13, anchor);
+    			append_dev(div13, div12);
+    			append_dev(div12, div6);
+    			append_dev(div6, h60);
+    			append_dev(div12, t7);
+    			append_dev(div12, div11);
+    			append_dev(div11, div10);
+    			append_dev(div10, div7);
+    			append_dev(div7, label0);
+    			append_dev(label0, input0);
+    			input0.checked = input0.__value === /*slider_choice*/ ctx[1];
+    			append_dev(label0, t8);
+    			append_dev(label0, h61);
+    			append_dev(div10, t10);
+    			append_dev(div10, div8);
+    			append_dev(div8, label1);
+    			append_dev(label1, input1);
+    			input1.checked = input1.__value === /*slider_choice*/ ctx[1];
+    			append_dev(label1, t11);
+    			append_dev(label1, h62);
+    			append_dev(div10, t13);
+    			append_dev(div10, div9);
+    			append_dev(div9, label2);
+    			append_dev(label2, input2);
+    			input2.checked = input2.__value === /*slider_choice*/ ctx[1];
+    			append_dev(label2, t14);
+    			append_dev(label2, h63);
+    			insert_dev(target, t16, anchor);
+    			insert_dev(target, div18, anchor);
+    			append_dev(div18, div17);
+    			append_dev(div17, div14);
+    			append_dev(div14, h64);
+    			append_dev(div17, t18);
+    			append_dev(div17, div15);
+    			append_dev(div15, small);
+    			append_dev(small, t19);
+    			append_dev(small, t20);
+    			append_dev(div17, t21);
+    			append_dev(div17, div16);
+    			mount_component(slider, div16, null);
     			current = true;
-    		},
-    		p: function update(ctx, [dirty]) {
-    			if (!current || dirty & /*$value_to_send*/ 4) set_data_dev(t4, /*$value_to_send*/ ctx[2]);
-    			if (!current || dirty & /*slider_value_back_end*/ 1) set_data_dev(t10, /*slider_value_back_end*/ ctx[0]);
-    			const slider0_changes = {};
 
-    			if (!updating_value && dirty & /*slider_value_back_end*/ 1) {
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input0, "change", /*input0_change_handler*/ ctx[6]),
+    					listen_dev(
+    						input0,
+    						"change",
+    						function () {
+    							if (is_function(/*send_slider_choice_to_back_end*/ ctx[3](/*slider_choice*/ ctx[1]))) /*send_slider_choice_to_back_end*/ ctx[3](/*slider_choice*/ ctx[1]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					),
+    					listen_dev(input1, "change", /*input1_change_handler*/ ctx[8]),
+    					listen_dev(
+    						input1,
+    						"change",
+    						function () {
+    							if (is_function(/*send_slider_choice_to_back_end*/ ctx[3](/*slider_choice*/ ctx[1]))) /*send_slider_choice_to_back_end*/ ctx[3](/*slider_choice*/ ctx[1]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					),
+    					listen_dev(input2, "change", /*input2_change_handler*/ ctx[9]),
+    					listen_dev(
+    						input2,
+    						"change",
+    						function () {
+    							if (is_function(/*send_slider_choice_to_back_end*/ ctx[3](/*slider_choice*/ ctx[1]))) /*send_slider_choice_to_back_end*/ ctx[3](/*slider_choice*/ ctx[1]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, [dirty]) {
+    			ctx = new_ctx;
+    			if (!current || dirty & /*$value_to_send*/ 4) set_data_dev(t4, /*$value_to_send*/ ctx[2]);
+
+    			if (dirty & /*slider_choice*/ 2) {
+    				input0.checked = input0.__value === /*slider_choice*/ ctx[1];
+    			}
+
+    			if (dirty & /*slider_choice*/ 2) {
+    				input1.checked = input1.__value === /*slider_choice*/ ctx[1];
+    			}
+
+    			if (dirty & /*slider_choice*/ 2) {
+    				input2.checked = input2.__value === /*slider_choice*/ ctx[1];
+    			}
+
+    			if (!current || dirty & /*slider_value_front_end*/ 1) set_data_dev(t19, /*slider_value_front_end*/ ctx[0]);
+    			const slider_changes = {};
+
+    			if (!updating_value && dirty & /*slider_value_front_end*/ 1) {
     				updating_value = true;
-    				slider0_changes.value = /*slider_value_back_end*/ ctx[0];
+    				slider_changes.value = /*slider_value_front_end*/ ctx[0];
     				add_flush_callback(() => updating_value = false);
     			}
 
-    			slider0.$set(slider0_changes);
-    			if (!current || dirty & /*slider_value_front_end*/ 2) set_data_dev(t17, /*slider_value_front_end*/ ctx[1]);
-    			const slider1_changes = {};
-
-    			if (!updating_value_1 && dirty & /*slider_value_front_end*/ 2) {
-    				updating_value_1 = true;
-    				slider1_changes.value = /*slider_value_front_end*/ ctx[1];
-    				add_flush_callback(() => updating_value_1 = false);
-    			}
-
-    			slider1.$set(slider1_changes);
+    			slider.$set(slider_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(slider0.$$.fragment, local);
-    			transition_in(slider1.$$.fragment, local);
+    			transition_in(slider.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(slider0.$$.fragment, local);
-    			transition_out(slider1.$$.fragment, local);
+    			transition_out(slider.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div6);
-    			destroy_component(slider0);
-    			destroy_component(slider1);
+    			if (detaching) detach_dev(div5);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div13);
+    			/*$$binding_groups*/ ctx[7][0].splice(/*$$binding_groups*/ ctx[7][0].indexOf(input0), 1);
+    			/*$$binding_groups*/ ctx[7][0].splice(/*$$binding_groups*/ ctx[7][0].indexOf(input1), 1);
+    			/*$$binding_groups*/ ctx[7][0].splice(/*$$binding_groups*/ ctx[7][0].indexOf(input2), 1);
+    			if (detaching) detach_dev(t16);
+    			if (detaching) detach_dev(div18);
+    			destroy_component(slider);
+    			mounted = false;
+    			run_all(dispose);
     		}
     	};
 
@@ -5565,8 +5696,10 @@ var app = (function () {
     	let get_value_to_send_interval;
 
     	onMount(async () => {
+    		get_global_values();
     		get_value_to_send();
     		make_new_get_value_to_send_interval(100);
+    		get_global_values();
     	});
 
     	onDestroy(() => {
@@ -5580,10 +5713,22 @@ var app = (function () {
     		set_store_value(value_to_send, $value_to_send = get_value_to_send_response.value_to_send, $value_to_send);
     	}
 
-    	async function send_time_sleep_to_back_end(slider_value_back_end) {
-    		console.log("send_time_sleep_to_back_end", slider_value_back_end);
-    		const response = await fetch("https://get-data-python.vercel.app/send_time_sleep_to_back_end/" + slider_value_back_end);
+    	// async function send_time_sleep_to_back_end(slider_value_back_end){
+    	//   console.log("send_time_sleep_to_back_end", slider_value_back_end)
+    	//   const response = await fetch("https://get-data-python.vercel.app/send_time_sleep_to_back_end/"+slider_value_back_end);
+    	//   const get_value_to_send_response = await response.json();
+    	// }
+    	async function send_slider_choice_to_back_end(slider_choice) {
+    		console.log("send_slider_choice_to_back_end", slider_choice);
+    		const response = await fetch("https://get-data-python.vercel.app/send_slider_choice_to_back_end/" + slider_choice);
     		await response.json();
+    	}
+
+    	async function get_global_values() {
+    		console.log("get_global_values");
+    		const response = await fetch("https://get-data-python.vercel.app/get_global_values");
+    		const get_global_values_resp = await response.json();
+    		$$invalidate(1, slider_choice = get_global_values_resp.slider_choice);
     	}
 
     	async function make_new_get_value_to_send_interval(slider_value_front_end) {
@@ -5598,8 +5743,11 @@ var app = (function () {
     		);
     	}
 
-    	let slider_value_back_end;
+    	// let slider_value_back_end;
+    	// $: slider_value_back_end = 100;
     	let slider_value_front_end;
+
+    	let slider_choice;
 
     	// let value2 = 0;
     	let disabled = false;
@@ -5610,19 +5758,29 @@ var app = (function () {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<Home> was created with unknown prop '${key}'`);
     	});
 
-    	function slider0_value_binding(value) {
-    		slider_value_back_end = value;
-    		$$invalidate(0, slider_value_back_end);
+    	const $$binding_groups = [[]];
+
+    	function input0_change_handler() {
+    		slider_choice = this.__value;
+    		$$invalidate(1, slider_choice);
     	}
 
-    	const change_handler = () => send_time_sleep_to_back_end(slider_value_back_end);
+    	function input1_change_handler() {
+    		slider_choice = this.__value;
+    		$$invalidate(1, slider_choice);
+    	}
 
-    	function slider1_value_binding(value) {
+    	function input2_change_handler() {
+    		slider_choice = this.__value;
+    		$$invalidate(1, slider_choice);
+    	}
+
+    	function slider_value_binding(value) {
     		slider_value_front_end = value;
-    		$$invalidate(1, slider_value_front_end);
+    		$$invalidate(0, slider_value_front_end);
     	}
 
-    	const change_handler_1 = () => make_new_get_value_to_send_interval(slider_value_front_end);
+    	const change_handler = () => make_new_get_value_to_send_interval(slider_value_front_end);
 
     	$$self.$capture_state = () => ({
     		onMount,
@@ -5631,18 +5789,19 @@ var app = (function () {
     		get_value_to_send_interval,
     		get_value_to_send,
     		Slider,
-    		send_time_sleep_to_back_end,
+    		send_slider_choice_to_back_end,
+    		get_global_values,
     		make_new_get_value_to_send_interval,
-    		slider_value_back_end,
     		slider_value_front_end,
+    		slider_choice,
     		disabled,
     		$value_to_send
     	});
 
     	$$self.$inject_state = $$props => {
     		if ('get_value_to_send_interval' in $$props) get_value_to_send_interval = $$props.get_value_to_send_interval;
-    		if ('slider_value_back_end' in $$props) $$invalidate(0, slider_value_back_end = $$props.slider_value_back_end);
-    		if ('slider_value_front_end' in $$props) $$invalidate(1, slider_value_front_end = $$props.slider_value_front_end);
+    		if ('slider_value_front_end' in $$props) $$invalidate(0, slider_value_front_end = $$props.slider_value_front_end);
+    		if ('slider_choice' in $$props) $$invalidate(1, slider_choice = $$props.slider_choice);
     		if ('disabled' in $$props) $$invalidate(5, disabled = $$props.disabled);
     	};
 
@@ -5650,20 +5809,22 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	$$invalidate(0, slider_value_back_end = 0);
-    	$$invalidate(1, slider_value_front_end = 100);
+    	$$invalidate(0, slider_value_front_end = 100);
+    	$$invalidate(1, slider_choice = "");
 
     	return [
-    		slider_value_back_end,
     		slider_value_front_end,
+    		slider_choice,
     		$value_to_send,
-    		send_time_sleep_to_back_end,
+    		send_slider_choice_to_back_end,
     		make_new_get_value_to_send_interval,
     		disabled,
-    		slider0_value_binding,
-    		change_handler,
-    		slider1_value_binding,
-    		change_handler_1
+    		input0_change_handler,
+    		$$binding_groups,
+    		input1_change_handler,
+    		input2_change_handler,
+    		slider_value_binding,
+    		change_handler
     	];
     }
 

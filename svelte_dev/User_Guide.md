@@ -22,8 +22,6 @@ Go to svelte_dev folder.
 
 Enter cd "path/to/svelte/dev/folder".
 
-For example Enter: `cd "/Users/marckendal/xray_image_app/image_dev_tool_fastapi/svelte_dev"`
-
 Enter: `exec bash -l`
 
 Enter: `chmod u+x FirstSteps.sh`
